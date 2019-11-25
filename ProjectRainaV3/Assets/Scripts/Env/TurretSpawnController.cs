@@ -7,6 +7,7 @@ namespace Env
 {
     public class TurretSpawnController : MonoBehaviour
     {
+        [SerializeField] private float m_maxAlpha;
         [SerializeField] private FadeDirection m_fadeDirection;
         [Space][SerializeField] private bool m_status;
         [SerializeField] private GameObject m_onObject;
@@ -80,13 +81,13 @@ namespace Env
                 var spriteRenderer = !m_status ? m_onSr : m_offSr;
                 var color = spriteRenderer.color;
 
-                if (color.a < 1)
+                if (color.a < m_maxAlpha)
                 {
                     color.a += Time.deltaTime;
                 }
                 else
                 {
-                    color.a = 1;
+                    color.a = m_maxAlpha;
                     m_fadeDirection = FadeDirection.None;
                 }
 
