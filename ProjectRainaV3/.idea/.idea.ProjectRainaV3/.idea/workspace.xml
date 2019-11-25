@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfdc48aa-ba64-491a-8963-0e6b2ee0dd00" name="Default Changelist" comment="" />
+    <list default="true" id="cfdc48aa-ba64-491a-8963-0e6b2ee0dd00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectRainaV3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectRainaV3/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +190,7 @@
       <workItem from="1574658181578" duration="254000" />
       <workItem from="1574658689124" duration="2381000" />
       <workItem from="1574672998044" duration="6452000" />
+      <workItem from="1574708440753" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="Added Box Indicator where turrets are placed&#10;Building Fade Effect">
       <created>1574677190159</created>
@@ -210,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574680354399</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Max Alpha Parameter">
+      <created>1574708653021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574708653021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +247,8 @@
     <MESSAGE value="Added Box Indicator where turrets are placed&#10;Building Fade Effect" />
     <MESSAGE value="Deleted Meta Files" />
     <MESSAGE value="Finished Fade In and Out Effect On Hover,&#10;Added 2 Modes: Straight and Fade" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Fade In and Out Effect On Hover,&#10;Added 2 Modes: Straight and Fade" />
+    <MESSAGE value="Added Max Alpha Parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Max Alpha Parameter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
