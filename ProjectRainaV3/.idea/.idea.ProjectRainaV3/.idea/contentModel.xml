@@ -17,6 +17,11 @@
               </e>
             </e>
           </e>
+          <e p="Effects" t="Include">
+            <e p="Fade" t="Include">
+              <e p="FadeDirection.cs" t="Include" />
+            </e>
+          </e>
           <e p="GameObjectTools" t="Include">
             <e p="CameraTools.cs" t="Include" />
             <e p="DontDestroy.cs" t="Include" />
@@ -95,6 +100,9 @@
               <e p="Hitman" t="Include">
                 <e p="Hitman.atlas.txt" t="Include" />
               </e>
+              <e p="Hitman - Outline" t="Include">
+                <e p="Hitman.atlas.txt" t="Include" />
+              </e>
             </e>
           </e>
         </e>
@@ -107,6 +115,8 @@
             </e>
           </e>
           <e p="Env" t="Include">
+            <e p="BoxType.cs" t="Include" />
+            <e p="TurretLaneController.cs" t="Include" />
             <e p="TurretSpawnController.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
