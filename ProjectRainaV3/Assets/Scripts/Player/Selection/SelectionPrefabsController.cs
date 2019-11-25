@@ -8,8 +8,6 @@ namespace Player.Selection
 {
     public sealed class SelectionPrefabsController : MonoBehaviour
     {
-        private SelectionData m_activeSelection;
-
         private void Awake()
         {
             BindComponents();
@@ -64,13 +62,15 @@ namespace Player.Selection
             var newData = new SelectionData(newObject, curMergeData);
             
             Data.Add(newData);
-            m_activeSelection = newData;
+            ActiveSelection = newData;
 
         }
 
         public static SelectionPrefabsController Instance { get; private set; }
-        
-        [field: SerializeField]
+
+
+        public SelectionData ActiveSelection { get; private set; }
+
         public List<SelectionData> Data { get; private set; }
     }
 }

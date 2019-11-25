@@ -1,4 +1,5 @@
 ﻿using System;
+using Player.Selection;
 using UnityEngine;
 
 namespace Env
@@ -20,11 +21,20 @@ namespace Env
         private void OnMouseEnter()
         {
             Debug.Log("Mouse entered");
+
+            if (SelectionPrefabsController.Instance.ActiveSelection == null) return;
+            
+            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.transform.position =
+                transform.position;
+            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.SetActive(true);
         }
 
         private void OnMouseExit()
         {
+            if (SelectionPrefabsController.Instance.ActiveSelection == null) return;
+            
             Debug.Log("Mouse exited");
+            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.SetActive(false);
         }
     }
 }
