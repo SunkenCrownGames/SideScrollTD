@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cfdc48aa-ba64-491a-8963-0e6b2ee0dd00" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ProjectRainaV3" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Packages/com.esotericsoftware.spine.timeline-3.8/Runtime/SpineAnimationState/SpineAnimationStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Data/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/CraftingMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/InfoUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/CameraTools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MergedTurret/Data/MergedData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/TextEffects/TypewritterEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/DataStructure/CustomList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58C54DEF-84EA-4B3B-B28C-35158ED32599/3f/cf205926/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/Data/DynamicSoldierDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/85/83093f12/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/Data/SoldierData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Env/TurretSpawnController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Editor/CustomHierarchy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionPrefabsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionTurretController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Data/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Editor/Data/HierarchyData/HierarchyDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Editor/Data/HierarchyData/HierarchyObjectLink.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Spine/Runtime/spine-unity/Components/SkeletonAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/InfoUiData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../AttractionProject/Assets/AngieTools/GameObjectTools/FindComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Turrets/UI/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/ResultSlotController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Turrets/Data/DynamicTurretDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Data/DynamicEnemyDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Turrets/Data/TurretData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/UI/InputFieldTabController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/UI/EaseInUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/PlayfabCustom/Login/RegisterUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/UI/SoldierUiSlotController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/UI/UIMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MergedTurret/Data/DynamicMergedDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/PlayfabCustom/Login/LoginUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MergedTurret/Data/MergedDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Editor/CustomHierarchy.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/UI/EaseInUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/PlayfabCustom/Login/LoginUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/UI/InputFieldTabController.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/PlayfabCustom/Login/RegisterUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/TextEffects/TypewritterEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/DynamicEnemyDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Turrets/TurretData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/SoldierData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Turrets/DynamicTurretDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/SoldierDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/DynamicSoldierDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/CustomInspector.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/AngieObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Turrets/UI/TurretSlotUIController.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/85/83093f12/Debug.cs" />
+        <option value="$PROJECT_DIR$/Packages/com.esotericsoftware.spine.timeline-3.8/Runtime/SpineAnimationState/SpineAnimationStateBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/FindComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/SoldierUiSlotController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/UI/SoldierSlotInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Turrets/Data/TurretData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/Data/SoldierData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/MergedTurret/Data/MergedDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Turrets/UI/TurretSlotInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Turrets/Data/DynamicTurretDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Data/DynamicEnemyDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/Data/DynamicSoldierDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/MergedTurret/Data/DynamicMergedDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/DataStructure/CustomList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CraftingMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/TurretInfoUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/TurretInfoUiController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/InfoUIData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/InfoUiData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/InfoUiController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Turrets/UI/TurretSlotUiController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Data/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/MergedTurret/Data/MergedData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/UI/SoldierUiSlotController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Env/TurretSpawnController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/SelectionPrefasController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/SelectionPrefabsController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelefctionData.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/CameraTools.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionTurretController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/ResultSlotController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionPrefabsController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TxhTmK3ya8wQzXKRES1XVWKuMS" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="20352">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="20352" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfdc48aa-ba64-491a-8963-0e6b2ee0dd00" name="Default Changelist" comment="" />
+      <created>1574407663992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574407663992</updated>
+      <workItem from="1574407667790" duration="11251000" />
+      <workItem from="1574465172159" duration="2608000" />
+      <workItem from="1574469467648" duration="20876000" />
+      <workItem from="1574504304807" duration="863000" />
+      <workItem from="1574528101041" duration="2890000" />
+      <workItem from="1574553207049" duration="14204000" />
+      <workItem from="1574628514342" duration="6960000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
