@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdc48aa-ba64-491a-8963-0e6b2ee0dd00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/TurretBox.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/TurretBox.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Env/BoxType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Env/TurretLaneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectRainaV3/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectRainaV3/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectRainaV3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectRainaV3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AngieTools/Effects/Fade/FadeDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AngieTools/Effects/Fade/FadeDirection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/MiddleLane.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/MiddleLane.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Turrets/Tests/SkeletonTest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Turrets/Tests/SkeletonTest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/TurretBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/TurretBox.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Env/TurretLaneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Env/TurretLaneController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Env/TurretSpawnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Env/TurretSpawnController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Prefabs/MiddleLane.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Turrets/Data/DynamicTurretDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Editor/CustomHierarchy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Effects/Fade/FadeDirection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.esotericsoftware.spine.timeline-3.8/Runtime/SpineAnimationState/SpineAnimationStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Editor/Data/HierarchyData/HierarchyDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Editor/Data/HierarchyData/HierarchyObjectLink.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/Data/DynamicSoldierDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Soldiers/Data/SoldierData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Env/BoxType.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionPrefabsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Selection/SelectionTurretController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/UI/InputFieldTabController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/UI/InputFieldTabController.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/PlayfabCustom/Login/RegisterUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/TextEffects/TypewritterEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyData.cs" />
@@ -131,8 +129,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/InfoUiController.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/FadeInEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Env/BoxType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Env/TurretSpawnController.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Effects/Fade/FadeDirection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Env/TurretLaneController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Env/TurretSpawnController.cs" />
       </list>
     </option>
   </component>
@@ -146,7 +145,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,8 +194,23 @@
       <workItem from="1574628514342" duration="6960000" />
       <workItem from="1574658181578" duration="254000" />
       <workItem from="1574658689124" duration="2381000" />
-      <workItem from="1574672998044" duration="3193000" />
+      <workItem from="1574672998044" duration="6191000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Box Indicator where turrets are placed&#10;Building Fade Effect">
+      <created>1574677190159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574677190159</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Deleted Meta Files">
+      <created>1574677219228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574677219228</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +234,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="Added Box Indicator where turrets are placed&#10;Building Fade Effect" />
+    <MESSAGE value="Deleted Meta Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted Meta Files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
