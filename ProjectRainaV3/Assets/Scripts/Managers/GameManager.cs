@@ -6,6 +6,7 @@ using AngieTools.Tools.DataStructure;
 using Player;
 using Player.Soldiers;
 using Player.Turrets;
+using Player.Turrets.Data;
 using UnityEngine;
 using V2.Data;
 

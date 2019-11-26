@@ -1,6 +1,7 @@
 ﻿using System;
 using AngieTools.GameObjectTools;
 using AngieTools.UI;
+using Player.Turrets.Data;
 using Player.UI;
 using TMPro;
 using UnityEngine;
@@ -44,6 +45,7 @@ namespace Player.Turrets.UI
         private void AddTurretToCrafting()
         {
             Debug.Log("Clicked");
+            m_turretIcon.sprite = m_data.SelectedTurretIcon;
             ResultSlotController.Instance.UpdateTurretData(m_data);
         }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Player.Soldiers.UI;
 using Player.Turrets;
+using Player.Turrets.Data;
 using Player.Turrets.UI;
 using UnityEngine;
 using V2.Data;

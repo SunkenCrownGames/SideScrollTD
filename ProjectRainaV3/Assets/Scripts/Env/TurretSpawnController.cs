@@ -18,6 +18,7 @@ namespace Env
 
         private TurretLaneController m_laneController = null;
 
+        #region Unity Functions
         private void Awake()
         {
             BindComponents();
@@ -34,14 +35,8 @@ namespace Env
         {
             Fade();
         }
-
-        private void BindComponents()
-        {
-            m_onSr = m_onObject.GetComponent<SpriteRenderer>();
-            m_offSr = m_offObject.GetComponent<SpriteRenderer>();
-            m_laneController = GetComponentInParent<TurretLaneController>();
-        }
-
+        #endregion
+        
         #region Pointer Functions
         
         private void OnMouseEnter()
@@ -67,48 +62,119 @@ namespace Env
             m_laneController.TriggerBoxOff();
         }
 
+        private void OnMouseDown()
+        {
+            if(SelectionPrefabsController.Instance.ActiveSelection == null) return;
+            
+            Debug.Log("Test Click");
+            SwapBox();
+            m_status = true;
+        }
+
         #endregion
-        
+
+        private void BindComponents()
+        {
+            m_onSr = m_onObject.GetComponent<SpriteRenderer>();
+            m_offSr = m_offObject.GetComponent<SpriteRenderer>();
+            m_laneController = GetComponentInParent<TurretLaneController>();
+        }
+
+        private void SwapBox()
+        {
+            switch (m_laneController.BType)
+            {
+                case BoxType.Straight:
+                    if (!m_status)
+                    {
+                        
+                    }
+                    break;
+                case BoxType.Fade:
+                    if (!m_status)
+                    {
+                        //Color
+                        var oldColor = m_onSr.color;
+                        var newColor = m_offSr.color;
+                        
+                        //AlphaSwapLogic
+                        var curAlpha = oldColor.a;
+                        oldColor.a = 0;
+
+                        newColor.a = curAlpha;
+                        m_offSr.color = newColor;
+                        m_onSr.color = oldColor;
+                    }
+                    else
+                    {
+                        //Color
+                        var oldColor = m_offSr.color;
+                        var newColor = m_onSr.color;
+                        
+                        //AlphaSwapLogic
+                        var curAlpha = oldColor.a;
+                        oldColor.a = 0;
+
+                        newColor.a = curAlpha;
+                        m_onSr.color = newColor;
+                        m_offSr.color = oldColor;   
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
         public void ChangeBoxStatus(bool p_status)
         {
             m_status = p_status;
         }
 
+        #region Trigger Logic
         private void Fade()
         {
-            if (m_fadeDirection == FadeDirection.FadeIn)
+            switch (m_fadeDirection)
             {
-                var spriteRenderer = !m_status ? m_onSr : m_offSr;
-                var color = spriteRenderer.color;
-
-                if (color.a < m_maxAlpha)
+                case FadeDirection.FadeIn:
                 {
-                    color.a += Time.deltaTime;
-                }
-                else
-                {
-                    color.a = m_maxAlpha;
-                    m_fadeDirection = FadeDirection.None;
-                }
+                    var spriteRenderer = !m_status ? m_onSr : m_offSr;
+                    var color = spriteRenderer.color;
 
-                spriteRenderer.color = color;
-            }
-            else if (m_fadeDirection == FadeDirection.FadeOut)
-            {
-                var spriteRenderer = !m_status ? m_onSr : m_offSr;
-                var color = spriteRenderer.color;
+                    if (color.a < m_maxAlpha)
+                    {
+                        color.a += Time.deltaTime;
+                    }
+                    else
+                    {
+                        color.a = m_maxAlpha;
+                        m_fadeDirection = FadeDirection.None;
+                    }
 
-                if (color.a > 0)
-                {
-                    color.a -= Time.deltaTime;
+                    spriteRenderer.color = color;
+                    break;
                 }
-                else
+                case FadeDirection.FadeOut:
                 {
-                    color.a = 0;
-                    m_fadeDirection = FadeDirection.None;
-                }
+                    var spriteRenderer = !m_status ? m_onSr : m_offSr;
+                    var color = spriteRenderer.color;
 
-                spriteRenderer.color = color;
+                    if (color.a > 0)
+                    {
+                        color.a -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        color.a = 0;
+                        m_fadeDirection = FadeDirection.None;
+                    }
+
+                    spriteRenderer.color = color;
+                    break;
+                }
+                case FadeDirection.None:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
@@ -132,6 +198,8 @@ namespace Env
             m_onObject.SetActive(false);
         }
 
+        #endregion
+        
         public void SetupFade()
         {
             var offColor = m_offSr.color;

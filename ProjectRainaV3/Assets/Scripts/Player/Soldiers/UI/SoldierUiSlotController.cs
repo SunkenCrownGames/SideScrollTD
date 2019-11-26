@@ -48,7 +48,7 @@ namespace Player.Soldiers.UI
             base.OnPointerEnter(p_eventData);
             
             if(m_lockState || m_data == null) return;
-
+            
             ShowInfoScreen();
         }
         
@@ -61,6 +61,8 @@ namespace Player.Soldiers.UI
         public override void OnPointerClick(PointerEventData p_eventData)
         {
             base.OnPointerClick(p_eventData);
+            
+            m_soldierIcon.sprite = m_data.SelectedSoldierIcon;
             ResultSlotController.Instance.UpdateSoldierData(m_data);
         }
         

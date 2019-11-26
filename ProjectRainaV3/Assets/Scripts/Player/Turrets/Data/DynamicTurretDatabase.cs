@@ -4,6 +4,7 @@ using V2.Data;
 using System.Text;
 using AngieTools.DataStructures;
 using AngieTools.Tools.DataStructure;
+using Player.Turrets.Data;
 
 namespace Player.Turrets
 {

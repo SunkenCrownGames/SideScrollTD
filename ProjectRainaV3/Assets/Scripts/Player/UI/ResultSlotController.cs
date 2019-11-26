@@ -5,6 +5,7 @@ using AngieTools.UI;
 using Player.MergedTurret.Data;
 using Player.Selection;
 using Player.Turrets;
+using Player.Turrets.Data;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;

@@ -63,5 +63,8 @@ namespace Env
                     controller.UpdateFadeDirection(FadeDirection.FadeOut);
             }
         }
+        
+        
+        public BoxType BType => m_boxType;
     }
 }

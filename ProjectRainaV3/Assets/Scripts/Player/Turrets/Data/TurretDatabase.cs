@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Player.Turrets;
+using Player.Turrets.Data;
 using UnityEngine;
 
 namespace V2.Data

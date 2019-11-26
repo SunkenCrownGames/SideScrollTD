@@ -1,35 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 // ReSharper disable BaseObjectGetHashCodeCallInGetHashCode
 
-namespace Player.Turrets
+namespace Player.Turrets.Data
 {
     [System.Serializable]
     public class TurretData : IComparable
     {
         [Header("Bullet Data")]
-        [SerializeField]
-        protected GameObject m_bulletPrefabs;
-        [SerializeField]
-        protected Vector3 m_bulletSpawnOffset = Vector3.zero;
+        [SerializeField] protected GameObject m_bulletPrefabs;
+        [SerializeField] protected Vector3 m_bulletSpawnOffset = Vector3.zero;
         
-        [SerializeField]
-        protected Sprite m_turretIcon;
+        [SerializeField] protected Sprite m_turretIcon;
+        [SerializeField] protected Sprite m_selectedTurretIcon;
 
         [Header("Entity Data")]
-        [SerializeField]
-        protected int m_id;
-        [SerializeField]
-        protected string m_name;
-        [SerializeField]
-        protected string m_description;
-        [SerializeField]
-        protected float m_cost;
+        [SerializeField] protected int m_id;
+        [SerializeField] protected string m_name;
+        [SerializeField] protected string m_description;
+        [SerializeField] protected float m_cost;
 
-        [SerializeField]
-        protected Stats m_stats;
+        [SerializeField] protected Stats m_stats;
 
         public TurretData(TurretData p_data)
         {
@@ -106,6 +98,8 @@ namespace Player.Turrets
         #region Object Data
 
         public Sprite TurretIcon => m_turretIcon;
+
+        public Sprite SelectedTurretIcon => m_selectedTurretIcon;
 
         public GameObject BulletPrefabs => m_bulletPrefabs;
 

@@ -12,28 +12,21 @@ namespace V2.Data
     public class SoldierData : IComparable
     {
         [Header("Object Data")]
-        [SerializeField]
-        protected Sprite m_soldierIcon;
-
+        [SerializeField] protected Sprite m_soldierIcon;
+        [SerializeField] protected Sprite m_soldierSelectedIcon;
+        
         [Header("Modifier Data")]
-        [SerializeField]
-        protected Sprite m_modifierIcon;
+        [SerializeField] protected Sprite m_modifierIcon;
 
 
         [Header("Entity Data")]
-        [SerializeField]
-        protected int m_id;
-        [SerializeField]
-        protected string m_name;
-        [SerializeField]
-        protected string m_description;
-        [SerializeField]
-        protected float m_cost;
-        [SerializeField]
-        protected Stats m_stats;
+        [SerializeField] protected int m_id;
+        [SerializeField] protected string m_name;
+        [SerializeField] protected string m_description;
+        [SerializeField] protected float m_cost;
+        [SerializeField] protected Stats m_stats;
         
-        [SerializeField]
-        protected GameObject m_bullet;
+        [SerializeField] protected GameObject m_bullet;
         
 
         public SoldierData(SoldierData p_data)
@@ -80,24 +73,17 @@ namespace V2.Data
             }
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object p_obj)
         {
-            if (obj.GetType() == typeof(Int32))
+            if (p_obj?.GetType() == typeof(int))
             {
-                int castedToint = (int)obj;
+                var castedTint = (int)p_obj;
 
-                if (castedToint == m_id)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return castedTint == m_id;
             }
             else
             {
-                return obj is SoldierData otherTurretData && m_id == otherTurretData.m_id;
+                return p_obj is SoldierData otherTurretData && m_id == otherTurretData.m_id;
             }
         }
 
@@ -112,6 +98,8 @@ namespace V2.Data
         #region Object Data
 
         public Sprite SoldierIcon => m_soldierIcon;
+        public Sprite SelectedSoldierIcon => m_soldierSelectedIcon;
+
 
         public Sprite ModifierIcon => m_modifierIcon;
 

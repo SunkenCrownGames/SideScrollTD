@@ -12,16 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d9b3ad043731f42b19cd8321d2bca7, type: 3}
   m_Name: HierarchyDatabase
   m_EditorClassIdentifier: 
-  m_data:
-  - m_objectToColor: {fileID: 6684933656482984504, guid: 69b7f3a1862c9504c94dc3eb11847fb9,
-      type: 3}
-    m_boxColor: {r: 0.6792453, g: 0, b: 0.5069863, a: 1}
-    m_textColor: {r: 0, g: 0, b: 0, a: 1}
-  - m_objectToColor: {fileID: 228344915995295005, guid: 11f39b06282d21e4b94d642cc5c03ef9,
-      type: 3}
-    m_boxColor: {r: 0.39914662, g: 0.1745283, b: 1, a: 1}
-    m_textColor: {r: 0, g: 0, b: 0, a: 1}
-  - m_objectToColor: {fileID: 1166219308898098983, guid: ba2392e8c58934443b8185243af8f932,
-      type: 3}
-    m_boxColor: {r: 1, g: 0, b: 0, a: 1}
-    m_textColor: {r: 0, g: 0, b: 0, a: 1}
+  m_data: []
