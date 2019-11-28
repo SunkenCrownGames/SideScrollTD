@@ -13,18 +13,26 @@ MonoBehaviour:
   m_Name: SoldierData
   m_EditorClassIdentifier: 
   m_data:
-  - m_soldierIcon: {fileID: 21300000, guid: 2412d1d8498463f49ae6ebe3a66ffae9, type: 3}
-    m_soldierSelectedIcon: {fileID: 21300000, guid: 02c4cbcce432ae74bb2d965060e64d29,
-      type: 3}
-    m_modifierIcon: {fileID: 0}
-    m_id: 0
-    m_name: First Soldier
-    m_description: Test
-    m_cost: 5
+  - m_id: 0
+    m_name: Jack The Motherfucker
+    m_description: 
+    m_cost: 0
     m_stats:
-      m_maxHealth: 5
-      m_damage: 4
-      m_attackSpeed: 3
-      m_attackRange: 2
-      m_bulletSpeed: 10
+      m_maxHealth: 0
+      m_damage: 0
+      m_attackSpeed: 0
+      m_attackRange: 15
+      m_bulletSpeed: 0
     m_bullet: {fileID: 0}
+    m_soldierIcon: {fileID: 21300000, guid: 57a291d06bb28429b96bf477524b59f5, type: 3}
+    m_soldierSelectedIcon: {fileID: 0}
+    m_activeModifiers: 0000000001000000
+    m_damageOverDistanceModifierData:
+      m_damageMultiplier: 2
+      m_maxDistance: 100
+      m_maxDamage: 500
+    m_pierceModifierData:
+      m_maxPierceCount: 5
+    m_objectDataToggle: 0
+    m_entityDataToggle: 1
+    m_modifierDataToggle: 0

@@ -4,6 +4,8 @@ using System.Linq;
 using AngieTools.UI;
 using Player.MergedTurret.Data;
 using Player.Selection;
+using Player.Soldiers.Data;
+using Player.Soldiers.Data.Modifiers;
 using Player.Turrets;
 using Player.Turrets.Data;
 using TMPro;
@@ -18,8 +20,7 @@ namespace Player.UI
     {
         private Stats m_stats = null;
         private TurretData m_turretData;
-        private SoldierData m_soldierData;
-        
+
         [SerializeField] private TextMeshProUGUI m_costLabel = null;
         [SerializeField] private TextMeshProUGUI m_turretName = null;
         [SerializeField] private Image m_turretImage = null;
@@ -42,7 +43,7 @@ namespace Player.UI
         {
             
             // ReSharper disable once SpecifyACultureInStringConversionExplicitly
-            m_costLabel.text = (m_turretData.Cost + m_soldierData.Cost).ToString();
+            m_costLabel.text = (m_turretData.Cost + SoldierData.Cost).ToString();
             UpdateMergedData();
 
         }
@@ -52,13 +53,13 @@ namespace Player.UI
             var filterteTurretList =
                 DynamicMergedDatabase.Instance.Data.Where(p_data => p_data.TurretId == m_turretData.Id).ToList();
             
-            var filteredSoldierList = filterteTurretList.Where(p_data => p_data.SoldierId == m_soldierData.Id);
+            var filteredSoldierList = filterteTurretList.Where(p_data => p_data.SoldierId == SoldierData.Id);
 
             var soldierList = filteredSoldierList.ToList();
             
             if (!soldierList.Any()) return;
 
-            m_stats = m_turretData.StatsData + m_soldierData.StatsData;
+            m_stats = m_turretData.StatsData + SoldierData.StatsData;
             MergedData = soldierList[0];
             m_mergedImage.sprite = MergedData.MergedSprite;
             SelectionPrefabsController.Instance.SetDraggableTurret();
@@ -82,14 +83,14 @@ namespace Player.UI
             m_turretData = p_data;
             m_turretImage.sprite = p_data.TurretIcon;
 
-            if (m_soldierData == null) return;
+            if (SoldierData == null) return;
             
             UpdateSlot();
         }
 
         public void UpdateSoldierData(SoldierData p_data)
         {
-            m_soldierData = p_data;
+            SoldierData = p_data;
             m_soldierImage.sprite = p_data.SoldierIcon; 
             
             if (m_turretData == null) return;
@@ -116,5 +117,16 @@ namespace Player.UI
         public static ResultSlotController Instance { get; private set; }
 
         public MergedData MergedData { get; private set; }
+
+        public SoldierData SoldierData { get; set; }
+
+        public Stats TurretStats => m_stats;
+
+        public void RequestData(out Stats p_stats, out SoldierData p_soldierData)
+        {
+            p_stats = m_stats;
+
+            p_soldierData = SoldierData;
+        }
     }
 }

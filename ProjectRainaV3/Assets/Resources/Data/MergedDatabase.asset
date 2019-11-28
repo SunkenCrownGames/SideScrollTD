@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MergedDatabase
   m_EditorClassIdentifier: 
   m_data:
-  - m_prefab: {fileID: 252810230087207361, guid: 34f08ae2afed24b48a81dec2274d3a57,
+  - m_prefab: {fileID: 252810230087207361, guid: 2098c0ef72823ab42a633fac4ca32e2c,
       type: 3}
     m_mergedSprite: {fileID: 21300000, guid: 32997c96a91b5904aa064f961fa62937, type: 3}
     m_name: Merged Canon Turret

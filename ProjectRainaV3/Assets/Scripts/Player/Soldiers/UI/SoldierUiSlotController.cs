@@ -1,4 +1,5 @@
 ﻿using AngieTools.UI;
+using Player.Soldiers.Data;
 using Player.UI;
 using TMPro;
 using UnityEngine;
@@ -61,8 +62,8 @@ namespace Player.Soldiers.UI
         public override void OnPointerClick(PointerEventData p_eventData)
         {
             base.OnPointerClick(p_eventData);
-            
-            m_soldierIcon.sprite = m_data.SelectedSoldierIcon;
+
+            m_soldierIcon.sprite = m_data.SelectedSoldierIcon == null ? m_data.SelectedSoldierIcon : null;
             ResultSlotController.Instance.UpdateSoldierData(m_data);
         }
         

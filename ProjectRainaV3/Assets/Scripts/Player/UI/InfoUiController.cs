@@ -6,14 +6,14 @@ namespace Player.UI
 {
     public class InfoUiController : MonoBehaviour
     {
-        [SerializeField] private bool m_startOff;
+        [SerializeField] private bool m_startOff = false;
         
-        [SerializeField] private TextMeshProUGUI m_name;
-        [SerializeField] private TextMeshProUGUI m_description;
-        [SerializeField] private TextMeshProUGUI m_hpStats;
-        [SerializeField] private TextMeshProUGUI m_attackStat;
-        [SerializeField] private TextMeshProUGUI m_speedStat;
-        [SerializeField] private TextMeshProUGUI m_rangeStat;
+        [SerializeField] private TextMeshProUGUI m_name = null;
+        [SerializeField] private TextMeshProUGUI m_description = null;
+        [SerializeField] private TextMeshProUGUI m_hpStats = null;
+        [SerializeField] private TextMeshProUGUI m_attackStat = null;
+        [SerializeField] private TextMeshProUGUI m_speedStat = null;
+        [SerializeField] private TextMeshProUGUI m_rangeStat = null;
 
 
         private void Awake()

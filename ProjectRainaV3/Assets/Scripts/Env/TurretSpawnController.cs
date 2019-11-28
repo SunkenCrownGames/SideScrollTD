@@ -1,22 +1,26 @@
 ﻿using System;
 using AngieTools.Effects.Fade;
+using Managers;
+using Player.MergedTurret.Data;
 using Player.Selection;
+using Player.Turrets;
+using Player.UI;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Env
 {
     public class TurretSpawnController : MonoBehaviour
     {
-        [SerializeField] private float m_maxAlpha;
-        [SerializeField] private FadeDirection m_fadeDirection;
-        [Space][SerializeField] private bool m_status;
-        [SerializeField] private GameObject m_onObject;
-        [SerializeField] private GameObject m_offObject;
+        [SerializeField] private bool m_status = false;
+        [SerializeField] private TurretController m_turretReference;
+        [SerializeField] private GameObject m_whiteOnObject = null;
 
-        private SpriteRenderer m_onSr;
-        private SpriteRenderer m_offSr;
-
+        private BoxCollider2D m_boxCollider2D;
         private TurretLaneController m_laneController = null;
+        private SpriteRenderer m_spriteRenderer;
+        private Animator m_animator;
+        private AnimatorState m_currentState;
 
         #region Unity Functions
         private void Awake()
@@ -33,7 +37,7 @@ namespace Env
         // Update is called once per frame
         private void Update()
         {
-            Fade();
+            
         }
         #endregion
         
@@ -42,181 +46,99 @@ namespace Env
         private void OnMouseEnter()
         {
             Debug.Log("Mouse entered");
-
-            if (SelectionPrefabsController.Instance.ActiveSelection == null) return;
-
-            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.transform.position =
-                transform.position;
-            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.SetActive(true);
+            EnterState();
             
-            m_laneController.TriggerBoxOn();
         }
 
         private void OnMouseExit()
         {
-            if (SelectionPrefabsController.Instance.ActiveSelection == null) return;
-
-            Debug.Log("Mouse exited");
-            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.SetActive(false);
-
-            m_laneController.TriggerBoxOff();
+            ExitState();
         }
 
         private void OnMouseDown()
         {
-            if(SelectionPrefabsController.Instance.ActiveSelection == null) return;
-            
-            Debug.Log("Test Click");
-            SwapBox();
-            m_status = true;
+            ClickState();
         }
 
+        #endregion
+
+        #region Mouse States
+        /// <summary>
+        /// Will Call the lane controller to update the state of the lane to true when the mouse enters any of the slots
+        /// </summary>
+        private void EnterState()
+        {
+            if (SelectionPrefabsController.Instance.ActiveSelection == null || m_status) return;
+
+            m_laneController.ToggleSpawnControllers(true);
+
+            
+            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.transform.position =
+                transform.position;
+            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.SetActive(true);
+        }
+
+        /// <summary>
+        /// Will Call the lane controller to udpate the state of the lanes to false when the mouse enter any of the slots
+        /// </summary>
+        private void ExitState()
+        {
+            if (SelectionPrefabsController.Instance.ActiveSelection == null) return;
+
+            m_laneController.ToggleSpawnControllers(false);
+
+            Debug.Log("Mouse exited");
+            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.SetActive(false);
+        }
+
+        private void ClickState()
+        {
+            if (SelectionPrefabsController.Instance.ActiveSelection == null || m_status) return;
+
+            SelectionPrefabsController.Instance.ActiveSelection.LinkedObject.gameObject.SetActive(false);
+            
+            m_status = true;
+            var newTurret = Instantiate(ResultSlotController.Instance.MergedData.Prefab, transform.position,
+                Quaternion.identity, ParentManager.Instance.TurretParent);
+
+            var tc = newTurret.AddComponent<TurretController>();
+
+            m_turretReference = tc;
+
+            UpdateSpawnBoxCollider();
+            SlotToggle();
+        }
         #endregion
 
         private void BindComponents()
         {
-            m_onSr = m_onObject.GetComponent<SpriteRenderer>();
-            m_offSr = m_offObject.GetComponent<SpriteRenderer>();
             m_laneController = GetComponentInParent<TurretLaneController>();
+            m_spriteRenderer = m_whiteOnObject.GetComponent<SpriteRenderer>();
+            m_animator = m_whiteOnObject.GetComponent<Animator>();
+            m_boxCollider2D = GetComponent<BoxCollider2D>();
         }
 
-        private void SwapBox()
+        private void SlotToggle()
         {
-            switch (m_laneController.BType)
+            m_whiteOnObject.SetActive(!m_status);
+        }
+
+        public void UpdateSpawnBoxCollider()
+        {
+            m_boxCollider2D.enabled = (m_turretReference == null) ? true : false;
+        }
+        
+
+        public void SetState(bool p_toggle)
+        {
+            if (!p_toggle || m_status)
             {
-                case BoxType.Straight:
-                    if (!m_status)
-                    {
-                        
-                    }
-                    break;
-                case BoxType.Fade:
-                    if (!m_status)
-                    {
-                        //Color
-                        var oldColor = m_onSr.color;
-                        var newColor = m_offSr.color;
-                        
-                        //AlphaSwapLogic
-                        var curAlpha = oldColor.a;
-                        oldColor.a = 0;
-
-                        newColor.a = curAlpha;
-                        m_offSr.color = newColor;
-                        m_onSr.color = oldColor;
-                    }
-                    else
-                    {
-                        //Color
-                        var oldColor = m_offSr.color;
-                        var newColor = m_onSr.color;
-                        
-                        //AlphaSwapLogic
-                        var curAlpha = oldColor.a;
-                        oldColor.a = 0;
-
-                        newColor.a = curAlpha;
-                        m_onSr.color = newColor;
-                        m_offSr.color = oldColor;   
-                    }
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        public void ChangeBoxStatus(bool p_status)
-        {
-            m_status = p_status;
-        }
-
-        #region Trigger Logic
-        private void Fade()
-        {
-            switch (m_fadeDirection)
-            {
-                case FadeDirection.FadeIn:
-                {
-                    var spriteRenderer = !m_status ? m_onSr : m_offSr;
-                    var color = spriteRenderer.color;
-
-                    if (color.a < m_maxAlpha)
-                    {
-                        color.a += Time.deltaTime;
-                    }
-                    else
-                    {
-                        color.a = m_maxAlpha;
-                        m_fadeDirection = FadeDirection.None;
-                    }
-
-                    spriteRenderer.color = color;
-                    break;
-                }
-                case FadeDirection.FadeOut:
-                {
-                    var spriteRenderer = !m_status ? m_onSr : m_offSr;
-                    var color = spriteRenderer.color;
-
-                    if (color.a > 0)
-                    {
-                        color.a -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        color.a = 0;
-                        m_fadeDirection = FadeDirection.None;
-                    }
-
-                    spriteRenderer.color = color;
-                    break;
-                }
-                case FadeDirection.None:
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
-
-        public void TriggerBox()
-        {
-            if (!m_status)
-            {
-                m_offObject.SetActive(false);
-                m_onObject.SetActive(true);
+                m_spriteRenderer.enabled = false;
             }
             else
             {
-                m_offObject.SetActive(true);
-                m_onObject.SetActive(false);
+                m_spriteRenderer.enabled = true;
             }
         }
-
-        public void TriggerBoxOff()
-        {
-            m_offObject.SetActive(false);
-            m_onObject.SetActive(false);
-        }
-
-        #endregion
-        
-        public void SetupFade()
-        {
-            var offColor = m_offSr.color;
-            offColor.a = 0;
-            var onColor = m_onSr.color;
-            onColor.a = 0;
-            
-            m_offSr.color = offColor;
-            m_onSr.color = onColor;
-        }
-
-        public void UpdateFadeDirection(FadeDirection p_direction)
-        {
-            m_fadeDirection = p_direction;
-        }
-
-        // ReSharper disable once ConvertToAutoPropertyWithPrivateSetter
-        public FadeDirection FadeDirection => m_fadeDirection;
     }
 }

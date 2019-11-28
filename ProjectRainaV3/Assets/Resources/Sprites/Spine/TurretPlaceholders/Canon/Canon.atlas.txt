@@ -1,0 +1,601 @@
+
+Canon.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JoeCanon/BarrelRing1
+  rotate: true
+  xy: 2, 1028
+  size: 327, 813
+  orig: 333, 819
+  offset: 3, 3
+  index: -1
+PierceCanon/BarrelRing1
+  rotate: true
+  xy: 2, 1028
+  size: 327, 813
+  orig: 333, 819
+  offset: 3, 3
+  index: -1
+ScorchCanon/BarrelRing1
+  rotate: true
+  xy: 2, 1028
+  size: 327, 813
+  orig: 333, 819
+  offset: 3, 3
+  index: -1
+JoeCanon/BarrelRing2
+  rotate: true
+  xy: 2732, 1142
+  size: 492, 626
+  orig: 498, 633
+  offset: 3, 4
+  index: -1
+PierceCanon/BarrelRing2
+  rotate: true
+  xy: 2732, 1142
+  size: 492, 626
+  orig: 498, 633
+  offset: 3, 4
+  index: -1
+ScorchCanon/BarrelRing2
+  rotate: true
+  xy: 2732, 1142
+  size: 492, 626
+  orig: 498, 633
+  offset: 3, 4
+  index: -1
+JoeCanon/BarrelTip
+  rotate: false
+  xy: 2, 553
+  size: 513, 473
+  orig: 519, 480
+  offset: 3, 3
+  index: -1
+PierceCanon/BarrelTip
+  rotate: false
+  xy: 2, 553
+  size: 513, 473
+  orig: 519, 480
+  offset: 3, 3
+  index: -1
+ScorchCanon/BarrelTip
+  rotate: false
+  xy: 2, 553
+  size: 513, 473
+  orig: 519, 480
+  offset: 3, 3
+  index: -1
+JoeCanon/Body
+  rotate: false
+  xy: 2, 3248
+  size: 1248, 827
+  orig: 1255, 833
+  offset: 4, 3
+  index: -1
+JoeCanon/BodyHolder
+  rotate: false
+  xy: 2, 2833
+  size: 1169, 413
+  orig: 1175, 420
+  offset: 3, 3
+  index: -1
+PierceCanon/BodyHolder
+  rotate: false
+  xy: 2, 2833
+  size: 1169, 413
+  orig: 1175, 420
+  offset: 3, 3
+  index: -1
+ScorchCanon/BodyHolder
+  rotate: false
+  xy: 2, 2833
+  size: 1169, 413
+  orig: 1175, 420
+  offset: 3, 3
+  index: -1
+JoeCanon/BodyLink
+  rotate: false
+  xy: 2, 1451
+  size: 639, 174
+  orig: 645, 180
+  offset: 3, 3
+  index: -1
+PierceCanon/BodyLink
+  rotate: false
+  xy: 2, 1451
+  size: 639, 174
+  orig: 645, 180
+  offset: 3, 3
+  index: -1
+ScorchCanon/BodyLink
+  rotate: false
+  xy: 2, 1451
+  size: 639, 174
+  orig: 645, 180
+  offset: 3, 3
+  index: -1
+JoeCanon/DomeFloor
+  rotate: false
+  xy: 817, 1120
+  size: 1124, 235
+  orig: 1130, 241
+  offset: 3, 3
+  index: -1
+JoeCanon/HeadLight
+  rotate: false
+  xy: 3786, 1689
+  size: 284, 286
+  orig: 290, 292
+  offset: 3, 3
+  index: -1
+PierceCanon/HeadLight
+  rotate: false
+  xy: 3786, 1689
+  size: 284, 286
+  orig: 290, 292
+  offset: 3, 3
+  index: -1
+ScorchCanon/HeadLight
+  rotate: false
+  xy: 3786, 1689
+  size: 284, 286
+  orig: 290, 292
+  offset: 3, 3
+  index: -1
+JoeCanon/NeckBrace
+  rotate: false
+  xy: 2570, 1636
+  size: 1214, 339
+  orig: 1250, 345
+  offset: 4, 3
+  index: -1
+JoeCanon/joe_eyes
+  rotate: false
+  xy: 2570, 1995
+  size: 196, 84
+  orig: 202, 90
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_head
+  rotate: false
+  xy: 1046, 474
+  size: 419, 315
+  orig: 425, 321
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_helmet
+  rotate: false
+  xy: 3360, 1144
+  size: 538, 490
+  orig: 544, 496
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_jaw
+  rotate: false
+  xy: 1568, 997
+  size: 297, 121
+  orig: 303, 127
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_lowerbrow
+  rotate: false
+  xy: 2, 1360
+  size: 126, 89
+  orig: 132, 95
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_lowereye
+  rotate: false
+  xy: 3992, 3807
+  size: 83, 125
+  orig: 89, 131
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_neck
+  rotate: false
+  xy: 3820, 911
+  size: 109, 114
+  orig: 115, 120
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_polo
+  rotate: false
+  xy: 2028, 1679
+  size: 324, 130
+  orig: 330, 137
+  offset: 3, 4
+  index: -1
+JoeCanon/joe_upperbrow
+  rotate: false
+  xy: 644, 918
+  size: 146, 108
+  orig: 152, 114
+  offset: 3, 3
+  index: -1
+JoeCanon/joe_uppereye
+  rotate: false
+  xy: 2354, 1680
+  size: 168, 129
+  orig: 174, 135
+  offset: 3, 3
+  index: -1
+Muzzle/CanonMuzzle_00000
+  rotate: false
+  xy: 3495, 2727
+  size: 321, 212
+  orig: 1000, 1000
+  offset: 178, 326
+  index: -1
+Muzzle/CanonMuzzle_00001
+  rotate: false
+  xy: 3495, 2727
+  size: 321, 212
+  orig: 1000, 1000
+  offset: 178, 326
+  index: -1
+Muzzle/CanonMuzzle_00002
+  rotate: true
+  xy: 1467, 321
+  size: 271, 451
+  orig: 1000, 1000
+  offset: 208, 261
+  index: -1
+Muzzle/CanonMuzzle_00003
+  rotate: true
+  xy: 1467, 321
+  size: 271, 451
+  orig: 1000, 1000
+  offset: 208, 261
+  index: -1
+Muzzle/CanonMuzzle_00004
+  rotate: true
+  xy: 2028, 1152
+  size: 482, 702
+  orig: 1000, 1000
+  offset: 205, 118
+  index: -1
+Muzzle/CanonMuzzle_00005
+  rotate: true
+  xy: 2028, 1152
+  size: 482, 702
+  orig: 1000, 1000
+  offset: 205, 118
+  index: -1
+Muzzle/CanonMuzzle_00006
+  rotate: false
+  xy: 2041, 1811
+  size: 527, 800
+  orig: 1000, 1000
+  offset: 205, 91
+  index: -1
+Muzzle/CanonMuzzle_00007
+  rotate: false
+  xy: 2041, 1811
+  size: 527, 800
+  orig: 1000, 1000
+  offset: 205, 91
+  index: -1
+Muzzle/CanonMuzzle_00008
+  rotate: true
+  xy: 2656, 2697
+  size: 549, 837
+  orig: 1000, 1000
+  offset: 206, 67
+  index: -1
+Muzzle/CanonMuzzle_00009
+  rotate: true
+  xy: 2656, 2697
+  size: 549, 837
+  orig: 1000, 1000
+  offset: 206, 67
+  index: -1
+Muzzle/CanonMuzzle_00010
+  rotate: true
+  xy: 1382, 1377
+  size: 552, 644
+  orig: 1000, 1000
+  offset: 226, 174
+  index: -1
+Muzzle/CanonMuzzle_00011
+  rotate: true
+  xy: 1382, 1377
+  size: 552, 644
+  orig: 1000, 1000
+  offset: 226, 174
+  index: -1
+Muzzle/CanonMuzzle_00012
+  rotate: true
+  xy: 707, 1357
+  size: 572, 673
+  orig: 1000, 1000
+  offset: 226, 170
+  index: -1
+Muzzle/CanonMuzzle_00013
+  rotate: true
+  xy: 707, 1357
+  size: 572, 673
+  orig: 1000, 1000
+  offset: 226, 170
+  index: -1
+Muzzle/CanonMuzzle_00014
+  rotate: true
+  xy: 2, 1627
+  size: 588, 703
+  orig: 1000, 1000
+  offset: 227, 151
+  index: -1
+Muzzle/CanonMuzzle_00015
+  rotate: true
+  xy: 2, 1627
+  size: 588, 703
+  orig: 1000, 1000
+  offset: 227, 151
+  index: -1
+Muzzle/CanonMuzzle_00016
+  rotate: false
+  xy: 3386, 1977
+  size: 601, 718
+  orig: 1000, 1000
+  offset: 227, 140
+  index: -1
+Muzzle/CanonMuzzle_00017
+  rotate: false
+  xy: 3386, 1977
+  size: 601, 718
+  orig: 1000, 1000
+  offset: 227, 140
+  index: -1
+Muzzle/CanonMuzzle_00018
+  rotate: true
+  xy: 2, 2217
+  size: 614, 728
+  orig: 1000, 1000
+  offset: 229, 140
+  index: -1
+Muzzle/CanonMuzzle_00019
+  rotate: true
+  xy: 2656, 2081
+  size: 614, 728
+  orig: 1000, 1000
+  offset: 229, 140
+  index: -1
+Muzzle/CanonMuzzle_00020
+  rotate: true
+  xy: 1173, 2613
+  size: 633, 740
+  orig: 1000, 1000
+  offset: 228, 133
+  index: -1
+Muzzle/CanonMuzzle_00021
+  rotate: true
+  xy: 1915, 2613
+  size: 633, 739
+  orig: 1000, 1000
+  offset: 228, 134
+  index: -1
+Muzzle/CanonMuzzle_00022
+  rotate: true
+  xy: 3069, 812
+  size: 328, 749
+  orig: 1000, 1000
+  offset: 549, 133
+  index: -1
+Muzzle/CanonMuzzle_00023
+  rotate: true
+  xy: 817, 791
+  size: 327, 749
+  orig: 1000, 1000
+  offset: 550, 133
+  index: -1
+Muzzle/CanonMuzzle_00024
+  rotate: true
+  xy: 1568, 594
+  size: 309, 755
+  orig: 1000, 1000
+  offset: 581, 120
+  index: -1
+Muzzle/CanonMuzzle_00025
+  rotate: true
+  xy: 2325, 501
+  size: 309, 755
+  orig: 1000, 1000
+  offset: 581, 120
+  index: -1
+Muzzle/CanonMuzzle_00026
+  rotate: true
+  xy: 3992, 3451
+  size: 19, 52
+  orig: 1000, 1000
+  offset: 874, 549
+  index: -1
+Muzzle/CanonMuzzle_00027
+  rotate: false
+  xy: 4071, 4074
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+PierceCanon/Body
+  rotate: false
+  xy: 1252, 3248
+  size: 1248, 827
+  orig: 1255, 833
+  offset: 4, 3
+  index: -1
+PierceCanon/DomeFloor
+  rotate: false
+  xy: 1943, 905
+  size: 1124, 235
+  orig: 1130, 241
+  offset: 3, 3
+  index: -1
+PierceCanon/NeckBrace
+  rotate: false
+  xy: 732, 2272
+  size: 1307, 339
+  orig: 1313, 345
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_eyes
+  rotate: false
+  xy: 320, 1401
+  size: 159, 48
+  orig: 165, 54
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_head
+  rotate: true
+  xy: 3082, 423
+  size: 387, 594
+  orig: 393, 600
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_jaw
+  rotate: false
+  xy: 3818, 2707
+  size: 205, 232
+  orig: 211, 238
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_lowereye
+  rotate: false
+  xy: 3992, 3517
+  size: 55, 76
+  orig: 61, 82
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_lowereyebrows
+  rotate: false
+  xy: 3992, 3595
+  size: 60, 81
+  orig: 66, 87
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_neck
+  rotate: false
+  xy: 3900, 1477
+  size: 160, 210
+  orig: 166, 216
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_shirt
+  rotate: true
+  xy: 3495, 2983
+  size: 263, 182
+  orig: 269, 188
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_uppereye
+  rotate: false
+  xy: 2768, 1988
+  size: 175, 91
+  orig: 213, 97
+  offset: 3, 3
+  index: -1
+PierceCanon/pierce_uppereyebrows
+  rotate: false
+  xy: 3121, 1984
+  size: 135, 95
+  orig: 141, 101
+  offset: 3, 3
+  index: -1
+ScorchCanon/Body
+  rotate: false
+  xy: 2502, 3248
+  size: 1248, 827
+  orig: 1255, 833
+  offset: 4, 3
+  index: -1
+ScorchCanon/DomeFloor
+  rotate: true
+  xy: 3752, 2941
+  size: 1134, 238
+  orig: 1140, 244
+  offset: 3, 3
+  index: -1
+ScorchCanon/NeckBrace
+  rotate: false
+  xy: 732, 1931
+  size: 1244, 339
+  orig: 1250, 345
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_eyes
+  rotate: false
+  xy: 2945, 1999
+  size: 174, 80
+  orig: 180, 86
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_flame
+  rotate: true
+  xy: 3992, 3472
+  size: 43, 79
+  orig: 49, 85
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_head
+  rotate: true
+  xy: 517, 356
+  size: 433, 527
+  orig: 439, 533
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_jaw
+  rotate: false
+  xy: 732, 2639
+  size: 286, 192
+  orig: 292, 198
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_lowerbrow
+  rotate: false
+  xy: 3992, 3934
+  size: 77, 141
+  orig: 83, 147
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_lowereye
+  rotate: false
+  xy: 3992, 3678
+  size: 49, 127
+  orig: 55, 133
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_moustache
+  rotate: false
+  xy: 130, 1396
+  size: 188, 53
+  orig: 194, 59
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_neck
+  rotate: false
+  xy: 1020, 2655
+  size: 129, 176
+  orig: 135, 182
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_torso
+  rotate: true
+  xy: 3900, 1027
+  size: 259, 115
+  orig: 265, 121
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_upperbrow
+  rotate: true
+  xy: 3900, 1288
+  size: 187, 175
+  orig: 193, 181
+  offset: 3, 3
+  index: -1
+ScorchCanon/scorch_uppereye
+  rotate: false
+  xy: 517, 887
+  size: 125, 139
+  orig: 131, 145
+  offset: 3, 3
+  index: -1

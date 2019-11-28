@@ -5,6 +5,7 @@ using AngieTools.DataStructures;
 using AngieTools.Tools.DataStructure;
 using Player;
 using Player.Soldiers;
+using Player.Soldiers.Data;
 using Player.Turrets;
 using Player.Turrets.Data;
 using UnityEngine;
@@ -23,9 +24,9 @@ namespace Managers
 
 
         [Header("Debug Data")] 
-        [SerializeField] private bool m_debugMode;
-        [SerializeField] private int m_availableTurretTracker;
-        [SerializeField] private int m_availableSoldiersTracker;
+        [SerializeField] private bool m_debugMode = false;
+        [SerializeField] private int m_availableTurretTracker = 0;
+        [SerializeField] private int m_availableSoldiersTracker = 0;
         
         private void Awake()
         {

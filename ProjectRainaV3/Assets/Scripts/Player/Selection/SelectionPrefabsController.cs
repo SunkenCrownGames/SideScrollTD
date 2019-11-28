@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Player.MergedTurret.Data;
+using Player.Turrets;
 using Player.UI;
 using UnityEngine;
 
@@ -52,7 +53,10 @@ namespace Player.Selection
             var newObject = Instantiate(curMergeData.Prefab, Vector3.zero, Quaternion.identity,
                 transform);
 
-            newObject.AddComponent<SelectionTurretController>();
+            var stc = newObject.AddComponent<SelectionTurretController>();
+            var tsc = newObject.GetComponent<TurretSpineController>();
+            tsc.SetIdle();
+            
             
             newObject.SetActive(false);
             

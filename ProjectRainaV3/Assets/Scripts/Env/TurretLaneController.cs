@@ -9,8 +9,7 @@ namespace Env
 {
     public class TurretLaneController : MonoBehaviour
     {
-        [SerializeField] private BoxType m_boxType;
-        [SerializeField] private List<TurretSpawnController> m_spawnControllers;
+        [SerializeField] private List<TurretSpawnController> m_spawnControllers = null;
 
         private void Awake()
         {
@@ -19,52 +18,15 @@ namespace Env
 
         private void Start()
         {
-            Setup();
-        }
-
-        private void Setup()
-        {
-            foreach (var spawnController in m_spawnControllers)
-            {
-                if (m_boxType == BoxType.Fade)
-                {
-                    spawnController.SetupFade();
-                }
-                else
-                {
-                    spawnController.TriggerBoxOff();
-                }
-            }
-        }
-
-        public void TriggerBoxOn()
-        {
-
-            if (ResultSlotController.Instance.MergedData == null) return;
             
-            foreach (var controller in m_spawnControllers)
-            {
-                if(m_boxType == BoxType.Straight)
-                    controller.TriggerBox();
-                else
-                    controller.UpdateFadeDirection(FadeDirection.FadeIn);
-            }
         }
 
-        public void TriggerBoxOff()
+        public void ToggleSpawnControllers(bool p_toggle)
         {
-            if (ResultSlotController.Instance.MergedData == null) return;
-            
-            foreach (var controller in m_spawnControllers)
+            foreach (var turretSpawnController in m_spawnControllers)
             {
-                if(m_boxType == BoxType.Straight)
-                    controller.TriggerBoxOff();
-                else
-                    controller.UpdateFadeDirection(FadeDirection.FadeOut);
+                turretSpawnController.SetState(p_toggle);
             }
         }
-        
-        
-        public BoxType BType => m_boxType;
     }
 }

@@ -2,6 +2,7 @@
 using System.Text;
 using AngieTools.DataStructures;
 using AngieTools.Tools.DataStructure;
+using Player.Soldiers.Data;
 using Player.Turrets;
 using UnityEngine;
 using V2.Data;

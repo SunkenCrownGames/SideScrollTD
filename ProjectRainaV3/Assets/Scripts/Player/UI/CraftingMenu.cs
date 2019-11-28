@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Player.Soldiers.Data;
 using Player.Soldiers.UI;
 using Player.Turrets;
 using Player.Turrets.Data;
