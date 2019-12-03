@@ -91,8 +91,6 @@ namespace Level
 
         private Vector3 GeneratePosition()
         {
-            var validX = false;
-            var validY = false;
 
             while (m_tryCount < m_maxTryCount)
             {
@@ -104,8 +102,7 @@ namespace Level
                 var initialXPosition = 0.0f;
                 var initialYPosition = 0.0f;
 
-                if (validX)
-                {
+                
                     //X RANGE
                     var xRange = new Range(m_worldXRange);
 
@@ -113,30 +110,17 @@ namespace Level
                     xRange.StartValue += m_selectedPlatformOffset.x + offsetX;
 
                     initialXPosition = WorldUtils.RandomRange(xRange);
-                }
-                else
-                {
-                    //Debug.Log("X is valid");
-                }
-
-                //Y RANGE
-                if (validY)
-                {
+                    //Y RANGE
                     var yRange = new Range(m_worldYRange);
 
                     yRange.EndValue -= Mathf.Abs(m_selectedPlatformOffset.y + offsetY);
                     yRange.StartValue += (m_selectedPlatformOffset.y + offsetY);
                     //Debug.Log("Y is invalid");
                     initialYPosition = WorldUtils.RandomRange(yRange);
-                }
-                else
-                {
-                    //Debug.Log("Y is valid");
-                }
 
-                m_rayData = GeneratePlatformRayData(initialXPosition, initialYPosition, offsetX, offsetY);
+                    m_rayData = GeneratePlatformRayData(initialXPosition, initialYPosition, offsetX, offsetY);
                 
-                if (CheckForOtherPlatformsInRange(m_rayData, out validX, out validY))
+                if (CheckForOtherPlatformsInRange(m_rayData))
                 {
                     //Debug.Log("Return True Here Connecting");
                     m_tryCount++;
@@ -184,7 +168,7 @@ namespace Level
                 rightUpPosition, rightDownPosition, upPosition, downPosition, p_offsetX, p_offsetY);
         }
 
-        private bool CheckForOtherPlatformsInRange(PlatformRayData p_data, out bool p_xCheck, out bool p_yCheck)
+        private bool CheckForOtherPlatformsInRange(PlatformRayData p_data)
         {
 
             #region RAYS
@@ -242,12 +226,9 @@ namespace Level
             var diagonalChecks = inSightDiagonalDownLeft || inSightDiagonalDownRight || inSightDiagonalUpLeft ||
                                  inSightDiagonalUpRight;
             
-            p_xCheck = inSightLeft || inSightRight || diagonalChecks;
-            p_yCheck = inSightUpLeft || inSightDownLeft || inSightUpRight || inSightDownRight || inSightDown ||
-                          inSightUp || diagonalChecks;
-
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
-            return p_xCheck || p_yCheck || diagonalChecks;
+            return inSightUpLeft || inSightDownLeft || inSightUpRight || inSightDownRight || inSightDown ||
+                   inSightUp || inSightLeft || inSightRight || diagonalChecks;
         }
     }
 }

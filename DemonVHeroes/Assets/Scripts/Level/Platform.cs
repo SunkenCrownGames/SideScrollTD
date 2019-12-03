@@ -43,6 +43,7 @@ namespace Level
         public void DrawRays()
         {
             PlatformRayData.DrawRays(m_data);
+            PlatformRayData.FireRay(m_data);
         }
     }
 }

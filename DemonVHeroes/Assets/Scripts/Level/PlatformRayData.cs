@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using AngieTools.V2Tools;
+using UnityEngine;
 
 namespace Level
 {
@@ -31,6 +32,54 @@ namespace Level
             DownPosition = p_data.DownPosition;
             OffsetX = p_data.OffsetX;
             OffsetY = p_data.OffsetY;
+        }
+
+        public static void FireRay(PlatformRayData p_data)
+        {
+            #region  LEFT
+            //LEFT
+            var inSightLeft = 
+                Physics2D.Raycast(p_data.LeftPosition, Vector3.left, p_data.OffsetX);
+            //LEFT UP
+            var inSightUpLeft = 
+                Physics2D.Raycast(p_data.LeftUpPosition, Vector3.up, p_data.OffsetY);
+            //LEFT DOWN
+            var inSightDownLeft = 
+                Physics2D.Raycast(p_data.LeftDownPosition, Vector3.down, p_data.OffsetX);
+            //LEFT DIAGONAL DOWN
+            var inSightDiagonalDownLeft =
+                Physics2D.Raycast(p_data.LeftDownPosition, VectorUtils.DiagonalDownLeft, p_data.OffsetY);
+            //LEFT DIAGONAL UP
+            var inSightDiagonalUpLeft = 
+                Physics2D.Raycast(p_data.LeftUpPosition, VectorUtils.DiagonalUpLeft , p_data.OffsetY);
+            #endregion
+
+            #region  RIGHT
+            //RIGHT
+            var inSightRight 
+                = Physics2D.Raycast(p_data.RightPosition, Vector3.right, p_data.OffsetX);
+            //RIGHT UP
+            var inSightUpRight 
+                = Physics2D.Raycast(p_data.RightUpPosition, Vector3.up, p_data.OffsetY);
+            //RIGHT DOWN
+            var inSightDownRight 
+                = Physics2D.Raycast(p_data.RightDownPosition, Vector3.down, p_data.OffsetX);
+            //LEFT DIAGONAL DOWN
+            var inSightDiagonalDownRight 
+                = Physics2D.Raycast(p_data.RightDownPosition, VectorUtils.DiagonalDownRight , p_data.OffsetY); 
+            //LEFT DIAGONAL UP
+            var inSightDiagonalUpRight 
+                = Physics2D.Raycast(p_data.RightUpPosition, VectorUtils.DiagonalUpRight , p_data.OffsetY);
+            #endregion
+            
+            #region MIDDLE
+            var inSightUp 
+                = Physics2D.Raycast(p_data.UpPosition, Vector3.up, p_data.OffsetY);
+            var inSightDown 
+                = Physics2D.Raycast(p_data.DownPosition, Vector3.down, p_data.OffsetY);
+            #endregion
+            
+            Debug.Log($"LEFT: {(bool)inSightLeft} LEFT UP: {(bool)inSightUpLeft} LEFT DOWN: {(bool)inSightDownLeft}");
         }
 
         public static void DrawRays(PlatformRayData p_data)
