@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Boss\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Boss\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_DemonVHeroes.-504049146.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Boss\Documents\O-Files\PotionWarrior\DemonVHeroes" t="IncludeRecursive">
+    <e p="C:\Users\jessi\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jessi\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_DemonVHeroes.-1847253412.00" t="ExcludeRecursive" />
+    <e p="C:\Users\jessi\Documents\GitHub\SideScrollTD\DemonVHeroes" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -59,6 +59,7 @@
             </e>
             <e p="PostProcessingController.cs" t="Include" />
             <e p="Range.cs" t="Include" />
+            <e p="ScreenRange.cs" t="Include" />
             <e p="Spine" t="Include">
               <e p="SpineEffects.cs" t="Include" />
             </e>
@@ -90,7 +91,11 @@
                 <e p="PathfinderDebugger.cs" t="Include" />
                 <e p="PathNode.cs" t="Include" />
               </e>
+              <e p="Dijkstra" t="Include">
+                <e p="PathingManager.cs" t="Include" />
+              </e>
             </e>
+            <e p="VectorUtils.cs" t="Include" />
             <e p="WorldUtils.cs" t="Include" />
           </e>
         </e>
@@ -355,6 +360,11 @@
           </e>
           <e p="GameDebug" t="Include">
             <e p="GameDebugger.cs" t="Include" />
+          </e>
+          <e p="Level" t="Include">
+            <e p="LevelGenerator.cs" t="Include" />
+            <e p="Platform.cs" t="Include" />
+            <e p="PlatformRayData.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Inventory.cs" t="Include" />

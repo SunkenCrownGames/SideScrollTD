@@ -23,6 +23,31 @@ namespace AngieTools.V2Tools
             return newObject;
         }
 
+        public static float RandomRange(Range p_range)
+        {
+            return Random.Range(p_range.StartValue, p_range.EndValue);
+        }
+
+        #region  Viewport To World
+        public static Vector3 ViewportToWorld(Vector2 p_position)
+        {
+            if (Camera.main != null) return Camera.main.ViewportToWorldPoint(p_position);
+
+            return Vector3.zero;
+        }
+        
+        public static Vector3 ViewportToWorld(float p_x, float p_y)
+        {
+            if (Camera.main == null) return Vector3.zero;
+            
+            var pos = Camera.main.ViewportToWorldPoint(new Vector3(p_x, p_y, Camera.main.transform.position.z * -1));
+            return pos;
+
+        }
+
+        #endregion
+        
+        #region  Mouse Position In World
         
         public static Vector3 GetMousePositionWithZ()
         {
@@ -36,7 +61,7 @@ namespace AngieTools.V2Tools
             return Camera.main.ScreenToWorldPoint(pos);
         }
 
-
+        
         public static Vector3 GetMousePositionWithZ(Vector2 p_mousePosition)
         {
             if (UnityEngine.Camera.main == null)
@@ -75,5 +100,7 @@ namespace AngieTools.V2Tools
             var pos =  new Vector3(mousePosition.x, mousePosition.y, p_camera.transform.position.z);
             return p_camera.ScreenToWorldPoint(pos);
         }
+        
+        #endregion
     }
 }

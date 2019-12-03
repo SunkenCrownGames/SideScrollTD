@@ -1,41 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="" />
+    <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/EnemyPlaceholder.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/EnemyPlaceholder.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Platform.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Platform.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemonVHeroes.sln.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/SpineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/SpineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/AngieTools/Data/HierarchyDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AngieTools/Data/HierarchyDatabase.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Dragon/dragon_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Dragon/dragon_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Dragon/dragon_dragon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Dragon/dragon_dragon.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Dragon/dragon_dragon2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Dragon/dragon_dragon2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Eyes/eyes_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Eyes/eyes_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Eyes/eyes_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Eyes/eyes_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/Equipment/Equipment_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/FootSoldier/FS_White_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Gauge/Gauge_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Gauge/Gauge_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Gauge/Gauge_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Gauge/Gauge_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Goblins/goblins_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Goblins/goblins_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Goblins/goblins_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Goblins/goblins_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Hero/hero-pro_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raggedy Spineboy/Raggedy Spineboy_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raptor/raptor_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raptor/raptor_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raptor/raptor_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Raptor/raptor_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Spineunitygirl/Doi_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/Stretchyman/stretchyman-diffuse-pma_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/raptor-pma_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-pro/spineboy-pro_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/spineboy-unity/spineboy_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Atlas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spine Examples/Spine Skeletons/whirlyblendmodes/whirlyblendmodes_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47847993-D7E2-490B-8629-0ABFB98B8B09/3c/c2c4745e/ListDrawerSettingsAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/8c/027cc084/MustExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../ProjectRainaV3/Assets/Scripts/Player/Soldiers/Data/SoldierData.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../ProjectRainaV3/Assets/Scripts/Player/Soldiers/Data/SoldierDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/StatUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/4a/24c3bd18/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InventoryUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../ProjectRainaV3/Assets/Scripts/Player/Turrets/Data/TurretDatabase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -71,19 +139,30 @@
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1UK6OfHbr6nvZpvxYzVHonCBaHT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,6 +210,8 @@
       <workItem from="1575197712441" duration="1588000" />
       <workItem from="1575231994214" duration="23163000" />
       <workItem from="1575313108446" duration="2698000" />
+      <workItem from="1575360954494" duration="10522000" />
+      <workItem from="1575396640061" duration="6488000" />
     </task>
     <servers />
   </component>
@@ -139,7 +220,21 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="XDebuggerManager">
