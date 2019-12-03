@@ -109,9 +109,9 @@ namespace Level
                     //X RANGE
                     var xRange = new Range(m_worldXRange);
 
-                    xRange.EndValue -= m_selectedPlatformOffset.x;
-                    xRange.StartValue += m_selectedPlatformOffset.x;
-                    //Debug.Log("X is invalid");
+                    xRange.EndValue -= Mathf.Abs(m_selectedPlatformOffset.x + offsetX);
+                    xRange.StartValue += m_selectedPlatformOffset.x + offsetX;
+
                     initialXPosition = WorldUtils.RandomRange(xRange);
                 }
                 else
@@ -124,8 +124,8 @@ namespace Level
                 {
                     var yRange = new Range(m_worldYRange);
 
-                    yRange.EndValue += (m_selectedPlatformOffset.y + offsetX);
-                    yRange.StartValue -= (m_selectedPlatformOffset.y + offsetY);
+                    yRange.EndValue -= Mathf.Abs(m_selectedPlatformOffset.y + offsetY);
+                    yRange.StartValue += (m_selectedPlatformOffset.y + offsetY);
                     //Debug.Log("Y is invalid");
                     initialYPosition = WorldUtils.RandomRange(yRange);
                 }
@@ -190,29 +190,45 @@ namespace Level
             #region RAYS
             #region LEFT
             //LEFT
-            var inSightLeft = Physics2D.Raycast(p_data.LeftPosition, Vector3.left, p_data.OffsetX);
+            var inSightLeft = 
+                Physics2D.Raycast(p_data.LeftPosition, Vector3.left, p_data.OffsetX);
             //LEFT UP
-            var inSightUpLeft = Physics2D.Raycast(p_data.LeftUpPosition, Vector3.up, p_data.OffsetY);
+            var inSightUpLeft = 
+                Physics2D.Raycast(p_data.LeftUpPosition, Vector3.up, p_data.OffsetY);
             //LEFT DOWN
-            var inSightDownLeft = Physics2D.Raycast(p_data.LeftDownPosition, Vector3.down, p_data.OffsetX);
+            var inSightDownLeft = 
+                Physics2D.Raycast(p_data.LeftDownPosition, Vector3.down, p_data.OffsetX);
             //LEFT DIAGONAL DOWN
-            var inSightDiagonalDownLeft = Physics2D.Raycast(p_data.LeftDownPosition, new Vector3(-1f, -1f) , p_data.OffsetX);
+            var inSightDiagonalDownLeft =
+                Physics2D.Raycast(p_data.LeftDownPosition, VectorUtils.DiagonalDownLeft, p_data.OffsetY);
             //LEFT DIAGONAL UP
-            var inSightDiagonalUpLeft = Physics2D.Raycast(p_data.LeftUpPosition, new Vector3(-1f, 1f) , p_data.OffsetX);
+            var inSightDiagonalUpLeft = 
+                Physics2D.Raycast(p_data.LeftUpPosition, VectorUtils.DiagonalUpLeft , p_data.OffsetY);
             #endregion
 
             #region  RIGHT
             //RIGHT
-            var inSightRight = Physics2D.Raycast(p_data.RightPosition, Vector3.right, p_data.OffsetX);
+            var inSightRight 
+                = Physics2D.Raycast(p_data.RightPosition, Vector3.right, p_data.OffsetX);
             //RIGHT UP
-            var inSightUpRight = Physics2D.Raycast(p_data.RightUpPosition, Vector3.up, p_data.OffsetY);
+            var inSightUpRight 
+                = Physics2D.Raycast(p_data.RightUpPosition, Vector3.up, p_data.OffsetY);
             //RIGHT DOWN
-            var inSightDownRight = Physics2D.Raycast(p_data.RightDownPosition, Vector3.down, p_data.OffsetX);
+            var inSightDownRight 
+                = Physics2D.Raycast(p_data.RightDownPosition, Vector3.down, p_data.OffsetX);
+            //LEFT DIAGONAL DOWN
+            var inSightDiagonalDownRight 
+                = Physics2D.Raycast(p_data.RightDownPosition, VectorUtils.DiagonalDownRight , p_data.OffsetY); 
+            //LEFT DIAGONAL UP
+            var inSightDiagonalUpRight 
+                = Physics2D.Raycast(p_data.RightUpPosition, VectorUtils.DiagonalUpRight , p_data.OffsetY);
             #endregion
             
             #region MIDDLE
-            var inSightUp = Physics2D.Raycast(p_data.UpPosition, Vector3.up, p_data.OffsetY);
-            var inSightDown = Physics2D.Raycast(p_data.DownPosition, Vector3.down, p_data.OffsetY);
+            var inSightUp 
+                = Physics2D.Raycast(p_data.UpPosition, Vector3.up, p_data.OffsetY);
+            var inSightDown 
+                = Physics2D.Raycast(p_data.DownPosition, Vector3.down, p_data.OffsetY);
             #endregion
             #endregion
 
@@ -223,11 +239,15 @@ namespace Level
             //Debug.Log($"Triggers: Right: {(bool)inSightRight} Right Up: {(bool)inSightUpRight} Right Down: {(bool)inSightDownRight}");
             //Debug.Log($"Triggers: Middle Up: {(bool)inSightUp} Midde Down: {(bool)inSightDown}");
 
-            p_xCheck = inSightLeft || inSightRight;
+            var diagonalChecks = inSightDiagonalDownLeft || inSightDiagonalDownRight || inSightDiagonalUpLeft ||
+                                 inSightDiagonalUpRight;
+            
+            p_xCheck = inSightLeft || inSightRight || diagonalChecks;
             p_yCheck = inSightUpLeft || inSightDownLeft || inSightUpRight || inSightDownRight || inSightDown ||
-                          inSightUp;
+                          inSightUp || diagonalChecks;
 
-                return inSightLeft || inSightUpLeft || inSightDownLeft || inSightRight || inSightUpRight || inSightDownRight || inSightDown|| inSightUp;
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalse
+            return p_xCheck || p_yCheck || diagonalChecks;
         }
     }
 }
