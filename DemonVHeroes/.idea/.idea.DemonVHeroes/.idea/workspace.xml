@@ -4,6 +4,7 @@
     <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,9 +84,9 @@
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" />
       </list>
     </option>
