@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Net.Configuration;
 using AngieTools.V2Tools;
 using Player;
 using Sirenix.OdinInspector;
 using Turrets;
 using UnityEngine;
-using AngieTools.V2Tools;
 
 namespace GameDebug
 {

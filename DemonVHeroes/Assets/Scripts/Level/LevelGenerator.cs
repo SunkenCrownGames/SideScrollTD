@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using AngieTools;
 using AngieTools.Tools;
 using AngieTools.V2Tools;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Random = UnityEngine.Random;
+// ReSharper disable Unity.PreferNonAllocApi
+// ReSharper disable ConditionIsAlwaysTrueOrFalse
 
 namespace Level
 {
@@ -16,34 +19,50 @@ namespace Level
 
         [Title("Scene Data")] 
         [SceneObjectsOnly] [SerializeField] private Transform m_platformParent;
-        
+
+        [Title("Spawn Data")]
+        [SerializeField] private List<Vector3> m_raycastDirections;
         
         [Title("Spawn Restrictions")]
-        [SerializeField] int m_maxTryCount;
-        [SerializeField] int m_platformCount;
+        [SerializeField] private int m_maxTryCount;
+        [SerializeField] private int m_platformCount;
         [Space]
         [SerializeField] private Range m_widthRange;
         [SerializeField] private Range m_heightRange;
         [Space]
-        [SerializeField] ScreenRange m_xScreenRestriction;
-        [SerializeField] ScreenRange m_yScreenRestriction;
+        [SerializeField] private ScreenRange m_xScreenRestriction;
+        [SerializeField] private ScreenRange m_yScreenRestriction;
 
-        [Title("Debug")] 
+        [Title("Ladder Restrictions")] 
+        [SerializeField] private int m_ladderRayCount;
+        
+        [Title("Debug")]
+        [SerializeField] private bool m_debugToggle;
+        [ShowIf("m_debugToggle")] [SerializeField] private float m_debugRayDuration = 10f;
+        [Title("Data")]
         [ShowInInspector] [SerializeField] [ReadOnly] private int m_tryCount;
         [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldXRange;
         [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldYRange;
+        [Title("Prefab Data")]
         [ShowInInspector] [SerializeField] [ReadOnly] private GameObject m_selectedPlatform;
         [ShowInInspector] [SerializeField] [ReadOnly] private Vector2 m_selectedPlatformOffset;
 
-        private PlatformRayData m_rayData;
-        
+        [Title("Scene Data")] 
+        [ShowInInspector] [SerializeField] [ReadOnly] private List<GameObject> m_activePlatforms;
+
         private GameObject[] m_platforms;
         private void Awake()
         {
             GenerateWorldLimits();
             GenerateLevel();
+            BuildLadders();
+            
         }
-
+        
+        #region Step 1 Generate Platforms
+        /// <summary>
+        /// Generate World Limits from the Viewport
+        /// </summary>
         private void GenerateWorldLimits()
         {
             m_worldXRange = new Range();
@@ -69,166 +88,137 @@ namespace Level
             GenerateSpriteOffset();
             for (var i = 0; i < m_platformCount; i++)
             {
-                var position = GeneratePosition();
-                if (m_tryCount >= m_maxTryCount)
-                {
-                    Debug.Log($"Count not create platform after {m_maxTryCount} Tries");
-                    break;
-                }
-
-                Debug.Log($"Successfully created platform after {m_tryCount} Tries");
-                GameObject spawnedPlatform = Instantiate(m_selectedPlatform, position, Quaternion.identity, m_platformParent);
-                spawnedPlatform.GetComponent<Platform>().BindRayData(m_rayData);
-                m_tryCount = 0;
+                m_activePlatforms.Add(GeneratePlatform());
             }
         }
 
+        /// <summary>
+        /// Generates A Single Platform
+        /// </summary>
+        private GameObject GeneratePlatform()
+        {
+            var position = GeneratePosition();
+
+
+            if (position == default(Vector3)) return null;
+            
+            Debug.Log($"Successfully created platform after {m_tryCount} Tries");
+            GameObject spawnedPlatform = Instantiate(m_selectedPlatform, position, Quaternion.identity, m_platformParent);
+            m_tryCount = 0;
+
+            return spawnedPlatform;
+        }
+
+        /// <summary>
+        /// Will GRab the Sprite Offsets
+        /// </summary>
         private void GenerateSpriteOffset()
         {
             var sr = m_selectedPlatform.GetComponentInChildren<SpriteRenderer>();
             m_selectedPlatformOffset = sr.bounds.extents;
         }
 
+        /// <summary>
+        /// Will Try to generate a position within m_maxTries
+        /// </summary>
+        /// <returns> Returns the position that it will place the platform At</returns>
         private Vector3 GeneratePosition()
         {
-
             while (m_tryCount < m_maxTryCount)
             {
+                var xWorldRange = new Range(m_worldXRange);
+                var yWorldRange = new Range(m_worldYRange);
+                xWorldRange.StartValue += m_selectedPlatformOffset.x;
+                xWorldRange.EndValue -= m_selectedPlatformOffset.x;
 
-                var offsetX = WorldUtils.RandomRange(m_widthRange);
-                var offsetY = WorldUtils.RandomRange(m_heightRange);
+                yWorldRange.StartValue += m_selectedPlatformOffset.y;
+                yWorldRange.EndValue += m_selectedPlatformOffset.y;
 
-                var position = new Vector3();
-                var initialXPosition = 0.0f;
-                var initialYPosition = 0.0f;
+                var xPosition = WorldUtils.RandomRange(xWorldRange);
+                var yPosition = WorldUtils.RandomRange(yWorldRange);
 
+                var xRange = WorldUtils.RandomRange(m_widthRange);
+                var yRange = WorldUtils.RandomRange(m_heightRange);
+
+
+                Vector3 newPosition = new Vector3(xPosition, yPosition);
+
+                if (RayCastAround(newPosition, yRange)) continue;
                 
-                    //X RANGE
-                    var xRange = new Range(m_worldXRange);
-
-                    xRange.EndValue -= Mathf.Abs(m_selectedPlatformOffset.x + offsetX);
-                    xRange.StartValue += m_selectedPlatformOffset.x + offsetX;
-
-                    initialXPosition = WorldUtils.RandomRange(xRange);
-                    //Y RANGE
-                    var yRange = new Range(m_worldYRange);
-
-                    yRange.EndValue -= Mathf.Abs(m_selectedPlatformOffset.y + offsetY);
-                    yRange.StartValue += (m_selectedPlatformOffset.y + offsetY);
-                    //Debug.Log("Y is invalid");
-                    initialYPosition = WorldUtils.RandomRange(yRange);
-
-                    m_rayData = GeneratePlatformRayData(initialXPosition, initialYPosition, offsetX, offsetY);
-                
-                if (CheckForOtherPlatformsInRange(m_rayData))
-                {
-                    //Debug.Log("Return True Here Connecting");
-                    m_tryCount++;
-                    continue;
-                }
-
-                position.x = initialXPosition;
-                position.y = initialYPosition;
-                
-                return position;
+                return newPosition;
             }
-
+            
+            Debug.Log("Ran Out Of Tries");
             return default(Vector3);
         }
-
-        private PlatformRayData GeneratePlatformRayData(float p_initialXPosition, float p_initialYPosition, float p_offsetX, float p_offsetY)
+        
+        /// <summary>
+        /// Fires Raycasts all around the platform
+        /// </summary>
+        /// <param name="p_startPosition"> The Center of the platform</param>
+        /// <param name="p_yRange"> The range at which to fire the ray at</param>
+        /// <returns></returns>
+        private bool RayCastAround(Vector3 p_startPosition, float p_yRange)
         {
-            var initialPosition = new Vector3(p_initialXPosition, p_initialYPosition);
+            var status = false;
+
+            foreach (var direction in m_raycastDirections)
+            {
+                var hit = Physics2D.RaycastAll(p_startPosition, direction.normalized, p_yRange);
+                Debug.Log(hit.Length);
+                if (hit.Length >= 1)
+                {
+                    Debug.Log("Collider HIT");
+                    m_tryCount++;
+                    status = true;
+                    break;
+                }
+            }
+
+            if (!m_debugToggle || status) return status;
             
-            #region Left
-            //LEFT
-            var leftPosition = new Vector3(p_initialXPosition - m_selectedPlatformOffset.x, p_initialYPosition);
-            //LEFT UP
-            var leftUpPosition = new Vector3(p_initialXPosition - m_selectedPlatformOffset.x, p_initialYPosition + m_selectedPlatformOffset.y);
-            //LEFT DOWN
-            var leftDownPosition = new Vector3(p_initialXPosition - m_selectedPlatformOffset.x, p_initialYPosition - m_selectedPlatformOffset.y);
-            #endregion
-            
-            #region Right
-            //RIGHT
-            var rightPosition = new Vector3(p_initialXPosition + m_selectedPlatformOffset.x, p_initialYPosition);
-            //RIGHT UP
-            var rightUpPosition = new Vector3(p_initialXPosition + m_selectedPlatformOffset.x, p_initialYPosition + m_selectedPlatformOffset.y);
-            //RIGHT DOWN
-            var rightDownPosition = new Vector3(p_initialXPosition + m_selectedPlatformOffset.x, p_initialYPosition - m_selectedPlatformOffset.y);
-            #endregion
-            
-            #region Middle
-            //MIDDLE
-            var upPosition = new Vector3(p_initialXPosition, p_initialYPosition + m_selectedPlatformOffset.y);
-            var downPosition = new Vector3(p_initialXPosition, p_initialYPosition - m_selectedPlatformOffset.y);
-            #endregion
-            
-            return new PlatformRayData(leftPosition, leftUpPosition, leftDownPosition, rightPosition,
-                rightUpPosition, rightDownPosition, upPosition, downPosition, p_offsetX, p_offsetY);
+            foreach (var direction in m_raycastDirections)
+            {
+                Debug.DrawRay(p_startPosition, direction.normalized * p_yRange, Color.red, m_debugRayDuration); 
+            }
+
+            return status;
+        }
+        #endregion
+
+        #region Step 2 Build Ladders
+
+        private void BuildLadders()
+        {
+            var positions = GetRayXPositions(m_activePlatforms[0]);
+
+            foreach (var position in positions)
+            {
+                Debug.Log(position);
+                Debug.DrawRay(position, Vector3.down * 500, Color.green, 500f);
+            }
         }
 
-        private bool CheckForOtherPlatformsInRange(PlatformRayData p_data)
+        private IEnumerable<Vector3> GetRayXPositions(GameObject p_platform)
         {
+            var positions = new Vector3[m_ladderRayCount];
+            var gameObjectPosition = p_platform.transform.position;
+            var currentPosition = gameObjectPosition.x - m_selectedPlatformOffset.x;
+            var widthOffset = m_selectedPlatformOffset.x * 2 / 5;
 
-            #region RAYS
-            #region LEFT
-            //LEFT
-            var inSightLeft = 
-                Physics2D.Raycast(p_data.LeftPosition, Vector3.left, p_data.OffsetX);
-            //LEFT UP
-            var inSightUpLeft = 
-                Physics2D.Raycast(p_data.LeftUpPosition, Vector3.up, p_data.OffsetY);
-            //LEFT DOWN
-            var inSightDownLeft = 
-                Physics2D.Raycast(p_data.LeftDownPosition, Vector3.down, p_data.OffsetX);
-            //LEFT DIAGONAL DOWN
-            var inSightDiagonalDownLeft =
-                Physics2D.Raycast(p_data.LeftDownPosition, VectorUtils.DiagonalDownLeft, p_data.OffsetY);
-            //LEFT DIAGONAL UP
-            var inSightDiagonalUpLeft = 
-                Physics2D.Raycast(p_data.LeftUpPosition, VectorUtils.DiagonalUpLeft , p_data.OffsetY);
-            #endregion
+            for (var i = 0; i < m_ladderRayCount; i++)
+            {
+                positions[i].x = currentPosition;
+                positions[i].y = gameObjectPosition.y;
+                positions[i].z = gameObjectPosition.z;
+                
+                currentPosition += widthOffset;
+            }
 
-            #region  RIGHT
-            //RIGHT
-            var inSightRight 
-                = Physics2D.Raycast(p_data.RightPosition, Vector3.right, p_data.OffsetX);
-            //RIGHT UP
-            var inSightUpRight 
-                = Physics2D.Raycast(p_data.RightUpPosition, Vector3.up, p_data.OffsetY);
-            //RIGHT DOWN
-            var inSightDownRight 
-                = Physics2D.Raycast(p_data.RightDownPosition, Vector3.down, p_data.OffsetX);
-            //LEFT DIAGONAL DOWN
-            var inSightDiagonalDownRight 
-                = Physics2D.Raycast(p_data.RightDownPosition, VectorUtils.DiagonalDownRight , p_data.OffsetY); 
-            //LEFT DIAGONAL UP
-            var inSightDiagonalUpRight 
-                = Physics2D.Raycast(p_data.RightUpPosition, VectorUtils.DiagonalUpRight , p_data.OffsetY);
-            #endregion
-            
-            #region MIDDLE
-            var inSightUp 
-                = Physics2D.Raycast(p_data.UpPosition, Vector3.up, p_data.OffsetY);
-            var inSightDown 
-                = Physics2D.Raycast(p_data.DownPosition, Vector3.down, p_data.OffsetY);
-            #endregion
-            #endregion
-
-            PlatformRayData.DrawRays(p_data);
-
-
-            //Debug.Log($"Triggers: Left: {(bool)inSightLeft} Left Up: {(bool)inSightUpLeft} Left Down: {(bool)inSightDownLeft}");
-            //Debug.Log($"Triggers: Right: {(bool)inSightRight} Right Up: {(bool)inSightUpRight} Right Down: {(bool)inSightDownRight}");
-            //Debug.Log($"Triggers: Middle Up: {(bool)inSightUp} Midde Down: {(bool)inSightDown}");
-
-            var diagonalChecks = inSightDiagonalDownLeft || inSightDiagonalDownRight || inSightDiagonalUpLeft ||
-                                 inSightDiagonalUpRight;
-            
-            // ReSharper disable once ConditionIsAlwaysTrueOrFalse
-            return inSightUpLeft || inSightDownLeft || inSightUpRight || inSightDownRight || inSightDown ||
-                   inSightUp || inSightLeft || inSightRight || diagonalChecks;
+            return positions;
         }
+
+        #endregion
+        
     }
 }

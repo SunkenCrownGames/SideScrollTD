@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" afterDir="false" />
-    </list>
+    <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,34 +12,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/StatUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/4a/24c3bd18/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InventoryUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/StatUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/Range.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,7 +50,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InputLogic/WindowsInputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/SpriteState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryUi.cs" />
@@ -74,7 +64,6 @@
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/PathFinding/AStar/AStarNode.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Grid.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" />
@@ -85,9 +74,13 @@
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/Range.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DirectionColorLink.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
       </list>
     </option>
   </component>
@@ -153,6 +146,8 @@
       <workItem from="1575313108446" duration="2698000" />
       <workItem from="1575360954494" duration="10522000" />
       <workItem from="1575396640061" duration="8904000" />
+      <workItem from="1575443703711" duration="12395000" />
+      <workItem from="1575491703777" duration="527000" />
     </task>
     <servers />
   </component>

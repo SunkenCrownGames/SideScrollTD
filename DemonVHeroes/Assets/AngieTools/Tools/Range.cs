@@ -42,5 +42,10 @@ namespace AngieTools
             get { return m_endValue; }
             set { m_endValue = value; }
         }
+
+        public override string ToString()
+        {
+            return $"Start Range: {m_startValue} End Value: {m_endValue}";
+        }
     }
 }

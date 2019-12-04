@@ -1,6 +1,4 @@
-﻿using UnityEditor.IMGUI.Controls;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Enemy
 {
