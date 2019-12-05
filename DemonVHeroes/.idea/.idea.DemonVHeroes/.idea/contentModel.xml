@@ -362,9 +362,10 @@
             <e p="GameDebugger.cs" t="Include" />
           </e>
           <e p="Level" t="Include">
+            <e p="Ground.cs" t="Include" />
+            <e p="HitPlatformResultData.cs" t="Include" />
             <e p="LevelGenerator.cs" t="Include" />
             <e p="Platform.cs" t="Include" />
-            <e p="PlatformRayData.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Inventory.cs" t="Include" />

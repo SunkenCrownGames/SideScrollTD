@@ -12,30 +12,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InventoryUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/StatUi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/Range.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Ground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InventoryUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -72,15 +74,17 @@
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridNode.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/Range.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DirectionColorLink.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Ground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
       </list>
     </option>
   </component>
@@ -148,6 +152,8 @@
       <workItem from="1575396640061" duration="8904000" />
       <workItem from="1575443703711" duration="12395000" />
       <workItem from="1575491703777" duration="527000" />
+      <workItem from="1575521719322" duration="11730000" />
+      <workItem from="1575577998624" duration="2344000" />
     </task>
     <servers />
   </component>
@@ -180,6 +186,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs</url>
+          <line>44</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" initialLine="44">
+            <startOffsets>
+              <option value="1172" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1173" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -1,49 +1,91 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
+using AngieTools;
+using AngieTools.Tools.DataStructure;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using System;
+using UnityScript.Lang;
+using Array = System.Array;
 
 namespace Level
 {
     public class Platform : MonoBehaviour
     {
-        private SpriteRenderer m_sr;
-
-        private PlatformRayData m_data;
+        [Title("Links")] 
+        [SerializeField] private HitPlatformResult m_topLink;
+        [ShowInInspector] [SerializeField] private HitPlatformResult m_bottomLink;
         
-        private void Awake()
-        {
-            BindComponents();
-        }
         
         // Start is called before the first frame update
-        private void Start()
+        void Start()
         {
         
         }
 
         // Update is called once per frame
-        private void Update()
+        void Update()
         {
         
         }
 
-        private void BindComponents()
+        [Button("Generate Link")]
+        public void Link()
         {
-            if (m_sr == null)
-                m_sr = GetComponentInParent<SpriteRenderer>();
+            var hits = new RaycastHit2D[5];
+            var hitPositions = LevelGenerator.GetRayXPositions(gameObject);
+            LinkBottom(hits, hitPositions);
+            Array.Clear(hits, 0, hits.Length);
+            LinkTop(hits, hitPositions);
         }
 
-
-        public void BindRayData(PlatformRayData p_data)
+        private void LinkBottom(RaycastHit2D[] p_hits, Vector3[] p_hitPositions)
         {
-            m_data = new PlatformRayData(p_data);
+            foreach (var position in p_hitPositions)
+            {
+                var hitCount = Physics2D.RaycastNonAlloc(position, Vector3.down, p_hits, 500, LayerMask.GetMask("Nodes"));
+                
+                if (hitCount <= 0) continue;
+                
+                Debug.DrawRay(position, Vector3.down * 500, Color.green, 50f);
+                
+                foreach(var hit in p_hits)
+                {
+                    if (hit.collider == null || hit.collider.gameObject == gameObject) continue;
+
+                    if(hit.collider.CompareTag("Ground"))
+                        hit.collider.GetComponent<Ground>().AddToPlatforms(this);
+                    
+                    m_bottomLink.AddToResults(hit.collider.GetComponent<Platform>(), Direction.BOTTOM, position);
+                    break;
+                }
+            }
         }
 
-        [Button("Draw Ray")]
-        public void DrawRays()
+        private void AddToGroundNode()
         {
-            PlatformRayData.DrawRays(m_data);
-            PlatformRayData.FireRay(m_data);
+            
+        }
+        
+        private void LinkTop(RaycastHit2D[] p_hits, Vector3[] p_hitPositions)
+        {
+            foreach (var position in p_hitPositions)
+            {
+                var hitCount = Physics2D.RaycastNonAlloc(position, Vector3.up, p_hits, 500, LayerMask.GetMask("Nodes"));
+                
+                if (hitCount <= 0) continue;
+                
+                Debug.DrawRay(position, Vector3.up * 500, Color.green, 50f);
+                
+                foreach(var hit in p_hits)
+                {
+                    if (hit.collider == null || hit.collider.gameObject == gameObject) continue;
+                    
+                    
+                    m_topLink.AddToResults(hit.collider.GetComponent<Platform>(), Direction.TOP, position);
+                    break;
+                }
+            }
         }
     }
 }

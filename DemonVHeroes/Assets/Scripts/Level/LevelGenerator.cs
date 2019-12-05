@@ -18,6 +18,7 @@ namespace Level
         [AssetsOnly] [SerializeField] private GameObject m_ladderPrefab;
 
         [Title("Scene Data")] 
+        [SerializeField] private int m_layerID;
         [SceneObjectsOnly] [SerializeField] private Transform m_platformParent;
 
         [Title("Spawn Data")]
@@ -48,16 +49,34 @@ namespace Level
         [ShowInInspector] [SerializeField] [ReadOnly] private Vector2 m_selectedPlatformOffset;
 
         [Title("Scene Data")] 
-        [ShowInInspector] [SerializeField] [ReadOnly] private List<GameObject> m_activePlatforms;
+        [ShowInInspector] [SerializeField] [ReadOnly] private List<Platform> m_activePlatforms;
 
+        private static LevelGenerator m_instance = null;
         private GameObject[] m_platforms;
         private void Awake()
         {
+            BindInstance();
             GenerateWorldLimits();
+            SetupLevelGenerator();
             GenerateLevel();
             BuildLadders();
             
         }
+
+        private void BindInstance()
+        {
+            if (m_instance != null) Destroy(gameObject);
+
+            m_instance = this;
+        }
+
+        private void SetupLevelGenerator()
+        {
+            m_platforms = new GameObject[m_platformCount];
+            m_selectedPlatform = m_platformPrefab;
+            GenerateSpriteOffset();
+        }
+
         
         #region Step 1 Generate Platforms
         /// <summary>
@@ -83,24 +102,29 @@ namespace Level
 
         private void GenerateLevel()
         {
-            m_platforms = new GameObject[m_platformCount];
-            m_selectedPlatform = m_platformPrefab;
-            GenerateSpriteOffset();
             for (var i = 0; i < m_platformCount; i++)
             {
-                m_activePlatforms.Add(GeneratePlatform());
+                var platform = GeneratePlatform()?.GetComponent<Platform>();
+                
+                if(platform != null)
+                    m_activePlatforms.Add(platform.GetComponent<Platform>());
             }
         }
 
         /// <summary>
         /// Generates A Single Platform
         /// </summary>
+        [Button("Generate Platform")]
         private GameObject GeneratePlatform()
         {
-            var position = GeneratePosition();
+            var generated = GeneratePosition(out var position);
 
 
-            if (position == default(Vector3)) return null;
+            if (!generated)
+            {
+                Debug.Log("Failled To Create Returning");
+                return null;
+            }
             
             Debug.Log($"Successfully created platform after {m_tryCount} Tries");
             GameObject spawnedPlatform = Instantiate(m_selectedPlatform, position, Quaternion.identity, m_platformParent);
@@ -122,7 +146,7 @@ namespace Level
         /// Will Try to generate a position within m_maxTries
         /// </summary>
         /// <returns> Returns the position that it will place the platform At</returns>
-        private Vector3 GeneratePosition()
+        private bool GeneratePosition(out Vector3 p_position)
         {
             while (m_tryCount < m_maxTryCount)
             {
@@ -141,15 +165,17 @@ namespace Level
                 var yRange = WorldUtils.RandomRange(m_heightRange);
 
 
-                Vector3 newPosition = new Vector3(xPosition, yPosition);
+                var newPosition = new Vector3(xPosition, yPosition);
 
                 if (RayCastAround(newPosition, yRange)) continue;
-                
-                return newPosition;
+
+                p_position = newPosition;
+                return true;
             }
             
             Debug.Log("Ran Out Of Tries");
-            return default(Vector3);
+            p_position = Vector3.zero;
+            return false;
         }
         
         /// <summary>
@@ -190,23 +216,21 @@ namespace Level
 
         private void BuildLadders()
         {
-            var positions = GetRayXPositions(m_activePlatforms[0]);
-
-            foreach (var position in positions)
+            foreach (var platform in m_activePlatforms)
             {
-                Debug.Log(position);
-                Debug.DrawRay(position, Vector3.down * 500, Color.green, 500f);
+                if(platform != null)
+                    platform.Link();
             }
         }
-
-        private IEnumerable<Vector3> GetRayXPositions(GameObject p_platform)
+        
+        public static Vector3[] GetRayXPositions(GameObject p_platform, int p_ladderRayCount, float p_platformOffset)
         {
-            var positions = new Vector3[m_ladderRayCount];
+            var positions = new Vector3[p_ladderRayCount];
             var gameObjectPosition = p_platform.transform.position;
-            var currentPosition = gameObjectPosition.x - m_selectedPlatformOffset.x;
-            var widthOffset = m_selectedPlatformOffset.x * 2 / 5;
+            var currentPosition = gameObjectPosition.x - p_platformOffset;
+            var widthOffset = p_platformOffset * 2 / 5;
 
-            for (var i = 0; i < m_ladderRayCount; i++)
+            for (var i = 0; i < p_ladderRayCount; i++)
             {
                 positions[i].x = currentPosition;
                 positions[i].y = gameObjectPosition.y;
@@ -217,6 +241,27 @@ namespace Level
 
             return positions;
         }
+        
+
+        public static Vector3[] GetRayXPositions(GameObject p_platform)
+        {
+            var positions = new Vector3[m_instance.m_ladderRayCount];
+            var gameObjectPosition = p_platform.transform.position;
+            var currentPosition = gameObjectPosition.x - m_instance.m_selectedPlatformOffset.x;
+            var widthOffset = m_instance.m_selectedPlatformOffset.x * 2 / 5;
+
+            for (var i = 0; i < m_instance.m_ladderRayCount; i++)
+            {
+                positions[i].x = currentPosition;
+                positions[i].y = gameObjectPosition.y;
+                positions[i].z = gameObjectPosition.z;
+                
+                currentPosition += widthOffset;
+            }
+
+            return positions;
+        }
+        
 
         #endregion
         

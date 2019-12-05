@@ -1,10 +1,22 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 
 namespace AngieTools.V2Tools
 {
     public static class WorldUtils
     {
+
+
+        public static List<GameObject> GetAllObjectOnLayer(int p_layerId)
+        {
+            var allGameObjects = GameObject.FindObjectsOfType<GameObject>();
+
+            return allGameObjects.Where(gameObject => gameObject.layer == p_layerId).ToList();
+        }
+        
+        
         public static GameObject CreateWorldText(string p_text, Transform p_parent = null,
             Vector3 p_localPosition = default(Vector3), int p_fontSize = 45,  
             Color p_color = default(Color), TextAlignmentOptions p_alignment = TextAlignmentOptions.Center, int p_sortingOrder = 0)
