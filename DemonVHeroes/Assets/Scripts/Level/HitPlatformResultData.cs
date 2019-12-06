@@ -16,17 +16,19 @@ namespace Level
             m_data = new List<HitPlatformResultData>();
         }
 
-        public void AddToResults(Platform p_hitPlatform, Direction p_direction, Vector3 p_rayStartPosition)
+        public bool AddToResults(Platform p_hitPlatform, Direction p_direction, Vector3 p_rayStartPosition)
         {
             foreach (var data in m_data)
             {
                 if (!data.m_hitPlatform.Equals(p_hitPlatform)) continue;
                 
                 data.m_rayStartPosition.Add(p_rayStartPosition);
-                return;
+                return false;
             }
             
             m_data.Add(new HitPlatformResultData(p_rayStartPosition, p_hitPlatform, p_direction));
+
+            return true;
         }
 
 

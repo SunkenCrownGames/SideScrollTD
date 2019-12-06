@@ -13,9 +13,12 @@ namespace Level
     public class Platform : MonoBehaviour
     {
         [Title("Links")] 
+        [SerializeField] private List<Ladder> m_ladders;
         [SerializeField] private HitPlatformResult m_topLink;
         [ShowInInspector] [SerializeField] private HitPlatformResult m_bottomLink;
-        
+
+        [Title("Data")] 
+        [SerializeField] private int m_linkCount = 0;
         
         // Start is called before the first frame update
         void Start()
@@ -35,8 +38,14 @@ namespace Level
             var hits = new RaycastHit2D[5];
             var hitPositions = LevelGenerator.GetRayXPositions(gameObject);
             LinkBottom(hits, hitPositions);
-            Array.Clear(hits, 0, hits.Length);
-            LinkTop(hits, hitPositions);
+            //Array.Clear(hits, 0, hits.Length);
+            //LinkTop(hits, hitPositions);
+        }
+        
+        [Button("Generate Pathing Tree")]
+        public void GeneratePathingTree()
+        {
+            
         }
 
         private void LinkBottom(RaycastHit2D[] p_hits, Vector3[] p_hitPositions)
@@ -56,17 +65,15 @@ namespace Level
                     if(hit.collider.CompareTag("Ground"))
                         hit.collider.GetComponent<Ground>().AddToPlatforms(this);
                     
-                    m_bottomLink.AddToResults(hit.collider.GetComponent<Platform>(), Direction.BOTTOM, position);
+                    var result = m_bottomLink.AddToResults(hit.collider.GetComponent<Platform>(), Direction.BOTTOM, position);
+                        hit.collider.GetComponent<Platform>().TopLink.AddToResults(this, Direction.TOP, position);
+                    if (result) m_linkCount++;
+                    
                     break;
                 }
             }
         }
 
-        private void AddToGroundNode()
-        {
-            
-        }
-        
         private void LinkTop(RaycastHit2D[] p_hits, Vector3[] p_hitPositions)
         {
             foreach (var position in p_hitPositions)
@@ -82,10 +89,29 @@ namespace Level
                     if (hit.collider == null || hit.collider.gameObject == gameObject) continue;
                     
                     
-                    m_topLink.AddToResults(hit.collider.GetComponent<Platform>(), Direction.TOP, position);
+                    var result = m_topLink.AddToResults(hit.collider.GetComponent<Platform>(), Direction.TOP, position);
+
+                    if (result) m_linkCount++;
+                    
                     break;
                 }
             }
         }
+        
+        public void BreakLadder()
+        {
+            var linkToBreak = UnityEngine.Random.Range(0, m_bottomLink.Data.Count);
+            m_bottomLink.Data[linkToBreak].m_hitPlatform.TopLink.Data.Remove(m_bottomLink.Data[linkToBreak]);
+            m_bottomLink.Data.RemoveAt(linkToBreak);
+            m_linkCount--;
+        }
+
+        public List<Ladder> Ladders => m_ladders;
+
+        public HitPlatformResult TopLink => m_topLink;
+
+        public HitPlatformResult BottomLink => m_bottomLink;
+
+        public int LinkCount => m_linkCount;
     }
 }

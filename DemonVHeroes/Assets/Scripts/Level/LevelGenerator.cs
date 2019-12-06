@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AngieTools;
 using AngieTools.Tools;
 using AngieTools.V2Tools;
@@ -13,61 +14,84 @@ namespace Level
 {
     public class LevelGenerator : MonoBehaviour
     {
-        [Title("Prefab Data")]
-        [AssetsOnly] [SerializeField] private GameObject m_platformPrefab;
-        [AssetsOnly] [SerializeField] private GameObject m_ladderPrefab;
+        [Title("Toggles")]
+        [SerializeField] private bool m_ladderToggle;
+        [SerializeField] private bool m_debugToggle;
+     
+        #region  Platform
+
+        [Title("Platform Data")]
+        [FoldoutGroup("Platform")] [AssetsOnly] [SerializeField] private GameObject m_platformPrefab = null;
 
         [Title("Scene Data")] 
-        [SerializeField] private int m_layerID;
-        [SceneObjectsOnly] [SerializeField] private Transform m_platformParent;
+        [FoldoutGroup("Platform")] [SerializeField] private int m_layerId = 0;
+        [FoldoutGroup("Platform")] [SceneObjectsOnly] [SerializeField] private Transform m_platformParent = null;
 
         [Title("Spawn Data")]
-        [SerializeField] private List<Vector3> m_raycastDirections;
+        [FoldoutGroup("Platform")] [SerializeField] private List<Vector3> m_raycastDirections = null;
         
         [Title("Spawn Restrictions")]
-        [SerializeField] private int m_maxTryCount;
-        [SerializeField] private int m_platformCount;
+        [FoldoutGroup("Platform")] [SerializeField] private int m_maxTryCount = 0;
+        [FoldoutGroup("Platform")] [SerializeField] private int m_platformCount = 0;
         [Space]
-        [SerializeField] private Range m_widthRange;
-        [SerializeField] private Range m_heightRange;
+        [FoldoutGroup("Platform")] [SerializeField] private Range m_widthRange = null;
+        [FoldoutGroup("Platform")] [SerializeField] private Range m_heightRange = null;
         [Space]
-        [SerializeField] private ScreenRange m_xScreenRestriction;
-        [SerializeField] private ScreenRange m_yScreenRestriction;
+        [FoldoutGroup("Platform")] [SerializeField] private ScreenRange m_xScreenRestriction = null;
+        [FoldoutGroup("Platform")] [SerializeField] private ScreenRange m_yScreenRestriction = null;
 
-        [Title("Ladder Restrictions")] 
-        [SerializeField] private int m_ladderRayCount;
+        #endregion
         
-        [Title("Debug")]
-        [SerializeField] private bool m_debugToggle;
+        #region  Ladder
+        
+        [ShowIfGroup("m_ladderToggle")]
+        [FoldoutGroup("m_ladderToggle/Ladder")] [Title("Ladder Data")]
+        [FoldoutGroup("m_ladderToggle/Ladder")] [AssetsOnly] [SerializeField] private GameObject m_ladderPrefab;
+        
+        [Title("Ladder Restrictions")]
+        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private float m_ladderWidth;
+        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private float m_ladderBleedOffset;
+        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private int m_laddersToBreak;
+        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private int m_ladderRayCount;
+        
+        #endregion
+
+        #region Debug
+        
+        [FoldoutGroup("Debug")]
         [ShowIf("m_debugToggle")] [SerializeField] private float m_debugRayDuration = 10f;
         [Title("Data")]
-        [ShowInInspector] [SerializeField] [ReadOnly] private int m_tryCount;
-        [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldXRange;
-        [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldYRange;
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private int m_tryCount;
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldXRange;
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldYRange;
         [Title("Prefab Data")]
-        [ShowInInspector] [SerializeField] [ReadOnly] private GameObject m_selectedPlatform;
-        [ShowInInspector] [SerializeField] [ReadOnly] private Vector2 m_selectedPlatformOffset;
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private GameObject m_selectedPlatform;
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private Vector2 m_selectedPlatformOffset;
 
         [Title("Scene Data")] 
-        [ShowInInspector] [SerializeField] [ReadOnly] private List<Platform> m_activePlatforms;
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private List<Platform> m_activePlatforms;
 
-        private static LevelGenerator m_instance = null;
+        private static LevelGenerator _instance = null;
         private GameObject[] m_platforms;
+        
+        #endregion
         private void Awake()
         {
             BindInstance();
             GenerateWorldLimits();
             SetupLevelGenerator();
             GenerateLevel();
-            BuildLadders();
+            
+            if(m_ladderToggle)
+                BuildLadders();
             
         }
 
         private void BindInstance()
         {
-            if (m_instance != null) Destroy(gameObject);
+            if (_instance != null) Destroy(gameObject);
 
-            m_instance = this;
+            _instance = this;
         }
 
         private void SetupLevelGenerator()
@@ -114,7 +138,7 @@ namespace Level
         /// <summary>
         /// Generates A Single Platform
         /// </summary>
-        [Button("Generate Platform")]
+        [FoldoutGroup("Debug")] [Button("Generate Platform")]
         private GameObject GeneratePlatform()
         {
             var generated = GeneratePosition(out var position);
@@ -191,14 +215,13 @@ namespace Level
             foreach (var direction in m_raycastDirections)
             {
                 var hit = Physics2D.RaycastAll(p_startPosition, direction.normalized, p_yRange);
-                Debug.Log(hit.Length);
-                if (hit.Length >= 1)
-                {
-                    Debug.Log("Collider HIT");
-                    m_tryCount++;
-                    status = true;
-                    break;
-                }
+
+                if (hit.Length < 1) continue;
+                
+                Debug.Log("Collider HIT");
+                m_tryCount++;
+                status = true;
+                break;
             }
 
             if (!m_debugToggle || status) return status;
@@ -218,9 +241,68 @@ namespace Level
         {
             foreach (var platform in m_activePlatforms)
             {
-                if(platform != null)
-                    platform.Link();
+                if (platform == null) return;
+                
+                platform.Link();
+                
             }
+            
+            BreakLadders();
+            
+            GenerateLadder();
+        }
+
+        private void BreakLadders()
+        {
+            var availablePlatformsToBreak =
+                m_activePlatforms.Where(p_platform => p_platform.LinkCount > 1).ToList();
+            
+            
+            if (m_laddersToBreak > availablePlatformsToBreak.Count)
+                m_laddersToBreak = availablePlatformsToBreak.Count;
+            
+            for (var i = 0; i < m_laddersToBreak; i++)
+            {
+                var randomPlatform = Random.Range(0, availablePlatformsToBreak.Count);
+                var platform = availablePlatformsToBreak[randomPlatform];
+                platform.BreakLadder();
+                availablePlatformsToBreak.RemoveAt(randomPlatform);
+            }
+        }
+
+        private void GenerateLadder()
+        {
+            var buildablePlatforms = m_activePlatforms.Where(p_platform => p_platform.LinkCount > 0).ToList();
+
+            var spriteRenderer = m_ladderPrefab.GetComponent<SpriteRenderer>() == null
+                ? m_ladderPrefab.GetComponentInChildren<SpriteRenderer>() : null;
+
+            if (spriteRenderer == null) return;
+            
+            var sprite = spriteRenderer.sprite;
+
+            foreach (var platform in buildablePlatforms)
+            {
+                foreach (var bottomLink in platform.BottomLink.Data)
+                {
+                    var link = Random.Range(0, bottomLink.m_rayStartPosition.Count);
+                    var endPosition = bottomLink.m_rayStartPosition[link];
+                    endPosition.y = bottomLink.m_hitPlatform.transform.position.y;
+                    
+                    var length = Mathf.Abs(endPosition.y - bottomLink.m_rayStartPosition[link].y);
+                    var heightScale = length / (spriteRenderer.bounds.extents.y * 2);
+
+                    GameObject ladder = Instantiate(m_ladderPrefab, bottomLink.m_rayStartPosition[link], Quaternion.identity,
+                        platform.gameObject.transform);
+
+                    ladder.transform.localScale = new Vector3(m_ladderWidth, heightScale, 1);
+                }
+            }
+        }
+
+        public static GameObject GetLadderPrefab()
+        {
+            return _instance == null ? null : _instance.m_ladderPrefab;
         }
         
         public static Vector3[] GetRayXPositions(GameObject p_platform, int p_ladderRayCount, float p_platformOffset)
@@ -242,15 +324,14 @@ namespace Level
             return positions;
         }
         
-
         public static Vector3[] GetRayXPositions(GameObject p_platform)
         {
-            var positions = new Vector3[m_instance.m_ladderRayCount];
+            var positions = new Vector3[_instance.m_ladderRayCount];
             var gameObjectPosition = p_platform.transform.position;
-            var currentPosition = gameObjectPosition.x - m_instance.m_selectedPlatformOffset.x;
-            var widthOffset = m_instance.m_selectedPlatformOffset.x * 2 / 5;
+            var currentPosition = gameObjectPosition.x - _instance.m_selectedPlatformOffset.x + _instance.m_ladderBleedOffset;
+            var widthOffset = (_instance.m_selectedPlatformOffset.x - _instance.m_ladderBleedOffset) * 2 / 5;
 
-            for (var i = 0; i < m_instance.m_ladderRayCount; i++)
+            for (var i = 0; i < _instance.m_ladderRayCount; i++)
             {
                 positions[i].x = currentPosition;
                 positions[i].y = gameObjectPosition.y;

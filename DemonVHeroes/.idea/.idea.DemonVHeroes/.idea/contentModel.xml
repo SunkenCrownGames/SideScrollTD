@@ -356,7 +356,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Enemy" t="Include">
+            <e p="EnemyPathing.cs" t="Include" />
             <e p="EnemyStats.cs" t="Include" />
+            <e p="EnemyTest.cs" t="Include" />
           </e>
           <e p="GameDebug" t="Include">
             <e p="GameDebugger.cs" t="Include" />
@@ -364,6 +366,7 @@
           <e p="Level" t="Include">
             <e p="Ground.cs" t="Include" />
             <e p="HitPlatformResultData.cs" t="Include" />
+            <e p="Ladder.cs" t="Include" />
             <e p="LevelGenerator.cs" t="Include" />
             <e p="Platform.cs" t="Include" />
           </e>

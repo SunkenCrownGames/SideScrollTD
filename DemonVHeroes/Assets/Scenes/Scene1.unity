@@ -163,7 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b64c2a43b2bb4df4f91b7cea1eb884f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nodes: []
+  m_nodes:
+  - {fileID: 0}
 --- !u!1001 &171582531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,6 +880,7 @@ Transform:
   m_Children:
   - {fileID: 1213505421}
   - {fileID: 469417583}
+  - {fileID: 1453569996}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1582,6 +1584,49 @@ MonoBehaviour:
   m_turretDatabase: {fileID: 11400000, guid: 1d3cd13673912fa4c8dc7b595f93a612, type: 2}
   m_inventoryUi: {fileID: 2048791860}
   m_turrets: 000000000100000000000000
+--- !u!1 &1453569995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453569996}
+  - component: {fileID: 1453569997}
+  m_Layer: 0
+  m_Name: EnemyTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1453569996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453569995}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.230734, y: 4.995207, z: -19.882812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 666939261}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453569997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453569995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6567c0b8bf9b0004f960a51e528efaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554103645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,10 +1670,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4da9afbada643e4fa53b3550e7233fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ladderToggle: 1
+  m_debugToggle: 0
   m_platformPrefab: {fileID: 4050028762052147532, guid: 6bd8b2da00f67204dba79f6eab18e134,
     type: 3}
-  m_ladderPrefab: {fileID: 0}
-  m_layerID: 0
+  m_layerId: 0
   m_platformParent: {fileID: 469417583}
   m_raycastDirections:
   - {x: 0, y: 1, z: 0}
@@ -1673,8 +1719,12 @@ MonoBehaviour:
   m_yScreenRestriction:
     m_minValue: 0.2
     m_maxValue: 0.8
+  m_ladderPrefab: {fileID: 5133943464006908787, guid: b388ef198fbf7a040a36ac4aaebae213,
+    type: 3}
+  m_ladderWidth: 0.35
+  m_ladderBleedOffset: 1
+  m_laddersToBreak: 3
   m_ladderRayCount: 6
-  m_debugToggle: 1
   m_debugRayDuration: 20
   m_tryCount: 0
   m_worldXRange:

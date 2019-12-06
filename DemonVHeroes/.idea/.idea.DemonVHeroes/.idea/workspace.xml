@@ -37,7 +37,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -81,9 +83,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Ground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Ground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
       </list>
     </option>
@@ -154,6 +157,8 @@
       <workItem from="1575491703777" duration="527000" />
       <workItem from="1575521719322" duration="11730000" />
       <workItem from="1575577998624" duration="2344000" />
+      <workItem from="1575613355855" duration="5096000" />
+      <workItem from="1575660291617" duration="11261000" />
     </task>
     <servers />
   </component>
@@ -186,19 +191,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs</url>
-          <line>44</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" initialLine="44">
-            <startOffsets>
-              <option value="1172" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1173" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
