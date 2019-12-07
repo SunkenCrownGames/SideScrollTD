@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformPath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,7 +78,6 @@
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" />
@@ -84,10 +87,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/Ground.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/PlatformPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
       </list>
     </option>
   </component>
@@ -159,6 +164,9 @@
       <workItem from="1575577998624" duration="2344000" />
       <workItem from="1575613355855" duration="5096000" />
       <workItem from="1575660291617" duration="11261000" />
+      <workItem from="1575693361010" duration="7569000" />
+      <workItem from="1575713710127" duration="4918000" />
+      <workItem from="1575751888441" duration="4635000" />
     </task>
     <servers />
   </component>

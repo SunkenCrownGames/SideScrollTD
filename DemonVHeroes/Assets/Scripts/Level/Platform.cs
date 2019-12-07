@@ -19,7 +19,9 @@ namespace Level
 
         [Title("Data")] 
         [SerializeField] private int m_linkCount = 0;
-        
+
+        [SerializeField] private List<PlatformPath> m_paths;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -38,12 +40,11 @@ namespace Level
             var hits = new RaycastHit2D[5];
             var hitPositions = LevelGenerator.GetRayXPositions(gameObject);
             LinkBottom(hits, hitPositions);
-            //Array.Clear(hits, 0, hits.Length);
-            //LinkTop(hits, hitPositions);
+            Array.Clear(hits, 0, hits.Length);
+            LinkTop(hits, hitPositions);
         }
-        
-        [Button("Generate Pathing Tree")]
-        public void GeneratePathingTree()
+
+        private void OnMouseDown()
         {
             
         }

@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using AngieTools;
 using AngieTools.Tools;
 using AngieTools.V2Tools;
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using UnityEngine;
-using Random = UnityEngine.Random;
+
 // ReSharper disable Unity.PreferNonAllocApi
 // ReSharper disable ConditionIsAlwaysTrueOrFalse
 
@@ -14,77 +15,28 @@ namespace Level
 {
     public class LevelGenerator : MonoBehaviour
     {
-        [Title("Toggles")]
-        [SerializeField] private bool m_ladderToggle;
         [SerializeField] private bool m_debugToggle;
-     
-        #region  Platform
 
-        [Title("Platform Data")]
-        [FoldoutGroup("Platform")] [AssetsOnly] [SerializeField] private GameObject m_platformPrefab = null;
+        [Title("Toggles")] [SerializeField] private bool m_ladderToggle;
 
-        [Title("Scene Data")] 
-        [FoldoutGroup("Platform")] [SerializeField] private int m_layerId = 0;
-        [FoldoutGroup("Platform")] [SceneObjectsOnly] [SerializeField] private Transform m_platformParent = null;
+        #region  Pathing
 
-        [Title("Spawn Data")]
-        [FoldoutGroup("Platform")] [SerializeField] private List<Vector3> m_raycastDirections = null;
-        
-        [Title("Spawn Restrictions")]
-        [FoldoutGroup("Platform")] [SerializeField] private int m_maxTryCount = 0;
-        [FoldoutGroup("Platform")] [SerializeField] private int m_platformCount = 0;
-        [Space]
-        [FoldoutGroup("Platform")] [SerializeField] private Range m_widthRange = null;
-        [FoldoutGroup("Platform")] [SerializeField] private Range m_heightRange = null;
-        [Space]
-        [FoldoutGroup("Platform")] [SerializeField] private ScreenRange m_xScreenRestriction = null;
-        [FoldoutGroup("Platform")] [SerializeField] private ScreenRange m_yScreenRestriction = null;
+        private List<List<PlatformPath>> m_paths;
 
         #endregion
-        
-        #region  Ladder
-        
-        [ShowIfGroup("m_ladderToggle")]
-        [FoldoutGroup("m_ladderToggle/Ladder")] [Title("Ladder Data")]
-        [FoldoutGroup("m_ladderToggle/Ladder")] [AssetsOnly] [SerializeField] private GameObject m_ladderPrefab;
-        
-        [Title("Ladder Restrictions")]
-        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private float m_ladderWidth;
-        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private float m_ladderBleedOffset;
-        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private int m_laddersToBreak;
-        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")] private int m_ladderRayCount;
-        
-        #endregion
 
-        #region Debug
-        
-        [FoldoutGroup("Debug")]
-        [ShowIf("m_debugToggle")] [SerializeField] private float m_debugRayDuration = 10f;
-        [Title("Data")]
-        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private int m_tryCount;
-        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldXRange;
-        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private Range m_worldYRange;
-        [Title("Prefab Data")]
-        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private GameObject m_selectedPlatform;
-        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private Vector2 m_selectedPlatformOffset;
-
-        [Title("Scene Data")] 
-        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly] private List<Platform> m_activePlatforms;
-
-        private static LevelGenerator _instance = null;
-        private GameObject[] m_platforms;
-        
-        #endregion
         private void Awake()
         {
             BindInstance();
             GenerateWorldLimits();
             SetupLevelGenerator();
             GenerateLevel();
-            
-            if(m_ladderToggle)
+
+            if (m_ladderToggle)
+            {
                 BuildLadders();
-            
+                BuildPath();
+            }
         }
 
         private void BindInstance()
@@ -92,6 +44,7 @@ namespace Level
             if (_instance != null) Destroy(gameObject);
 
             _instance = this;
+            m_paths = new List<List<PlatformPath>>();
         }
 
         private void SetupLevelGenerator()
@@ -101,10 +54,97 @@ namespace Level
             GenerateSpriteOffset();
         }
 
-        
+        #region  Platform
+
+        [Title("Platform Data")] [FoldoutGroup("Platform")] [AssetsOnly] [SerializeField]
+        private GameObject m_platformPrefab;
+
+        [Title("Scene Data")] [FoldoutGroup("Platform")] [SerializeField]
+        private int m_layerId;
+
+        [FoldoutGroup("Platform")] [SceneObjectsOnly] [SerializeField]
+        private Transform m_platformParent;
+
+        [Title("Spawn Data")] [FoldoutGroup("Platform")] [SerializeField]
+        private List<Vector3> m_raycastDirections;
+
+        [Title("Spawn Restrictions")] [FoldoutGroup("Platform")] [SerializeField]
+        private int m_maxTryCount;
+
+        [FoldoutGroup("Platform")] [SerializeField]
+        private int m_platformCount;
+
+        [Space] [FoldoutGroup("Platform")] [SerializeField]
+        private Range m_widthRange;
+
+        [FoldoutGroup("Platform")] [SerializeField]
+        private Range m_heightRange;
+
+        [Space] [FoldoutGroup("Platform")] [SerializeField]
+        private ScreenRange m_xScreenRestriction;
+
+        [FoldoutGroup("Platform")] [SerializeField]
+        private ScreenRange m_yScreenRestriction;
+
+        #endregion
+
+        #region  Ladder
+
+        [ShowIfGroup("m_ladderToggle")]
+        [FoldoutGroup("m_ladderToggle/Ladder")]
+        [Title("Ladder Data")]
+        [FoldoutGroup("m_ladderToggle/Ladder")]
+        [AssetsOnly]
+        [SerializeField]
+        private GameObject m_ladderPrefab;
+
+        [Title("Ladder Restrictions")] [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")]
+        private float m_ladderWidth;
+
+        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")]
+        private float m_ladderBleedOffset;
+
+        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")]
+        private int m_laddersToBreak;
+
+        [SerializeField] [FoldoutGroup("m_ladderToggle/Ladder")]
+        private int m_ladderRayCount;
+
+        #endregion
+
+        #region Debug
+
+        [FoldoutGroup("Debug")] [ShowIf("m_debugToggle")] [SerializeField]
+        private float m_debugRayDuration = 10f;
+
+        [Title("Data")] [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly]
+        private int m_tryCount;
+
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly]
+        private Range m_worldXRange;
+
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly]
+        private Range m_worldYRange;
+
+        [Title("Prefab Data")] [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly]
+        private GameObject m_selectedPlatform;
+
+        [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly]
+        private Vector2 m_selectedPlatformOffset;
+
+        [Title("Scene Data")] [FoldoutGroup("Debug")] [ShowInInspector] [SerializeField] [ReadOnly]
+        private List<Platform> m_activePlatforms;
+
+        private static LevelGenerator _instance;
+        private GameObject[] m_platforms;
+
+        #endregion
+
+
         #region Step 1 Generate Platforms
+
         /// <summary>
-        /// Generate World Limits from the Viewport
+        ///     Generate World Limits from the Viewport
         /// </summary>
         private void GenerateWorldLimits()
         {
@@ -113,13 +153,13 @@ namespace Level
 
             var maximumWorldPosition =
                 WorldUtils.ViewportToWorld(m_xScreenRestriction.MaxValue, m_yScreenRestriction.MaxValue);
-            
+
             var minimumWorldPosition =
                 WorldUtils.ViewportToWorld(m_xScreenRestriction.MinValue, m_yScreenRestriction.MinValue);
 
             m_worldXRange.StartValue = minimumWorldPosition.x;
             m_worldXRange.EndValue = maximumWorldPosition.x;
-            
+
             m_worldYRange.StartValue = minimumWorldPosition.y;
             m_worldYRange.EndValue = maximumWorldPosition.y;
         }
@@ -129,16 +169,17 @@ namespace Level
             for (var i = 0; i < m_platformCount; i++)
             {
                 var platform = GeneratePlatform()?.GetComponent<Platform>();
-                
-                if(platform != null)
+
+                if (platform != null)
                     m_activePlatforms.Add(platform.GetComponent<Platform>());
             }
         }
 
         /// <summary>
-        /// Generates A Single Platform
+        ///     Generates A Single Platform
         /// </summary>
-        [FoldoutGroup("Debug")] [Button("Generate Platform")]
+        [FoldoutGroup("Debug")]
+        [Button("Generate Platform")]
         private GameObject GeneratePlatform()
         {
             var generated = GeneratePosition(out var position);
@@ -149,16 +190,16 @@ namespace Level
                 Debug.Log("Failled To Create Returning");
                 return null;
             }
-            
+
             Debug.Log($"Successfully created platform after {m_tryCount} Tries");
-            GameObject spawnedPlatform = Instantiate(m_selectedPlatform, position, Quaternion.identity, m_platformParent);
+            var spawnedPlatform = Instantiate(m_selectedPlatform, position, Quaternion.identity, m_platformParent);
             m_tryCount = 0;
 
             return spawnedPlatform;
         }
 
         /// <summary>
-        /// Will GRab the Sprite Offsets
+        ///     Will GRab the Sprite Offsets
         /// </summary>
         private void GenerateSpriteOffset()
         {
@@ -167,7 +208,7 @@ namespace Level
         }
 
         /// <summary>
-        /// Will Try to generate a position within m_maxTries
+        ///     Will Try to generate a position within m_maxTries
         /// </summary>
         /// <returns> Returns the position that it will place the platform At</returns>
         private bool GeneratePosition(out Vector3 p_position)
@@ -196,14 +237,14 @@ namespace Level
                 p_position = newPosition;
                 return true;
             }
-            
+
             Debug.Log("Ran Out Of Tries");
             p_position = Vector3.zero;
             return false;
         }
-        
+
         /// <summary>
-        /// Fires Raycasts all around the platform
+        ///     Fires Raycasts all around the platform
         /// </summary>
         /// <param name="p_startPosition"> The Center of the platform</param>
         /// <param name="p_yRange"> The range at which to fire the ray at</param>
@@ -217,7 +258,7 @@ namespace Level
                 var hit = Physics2D.RaycastAll(p_startPosition, direction.normalized, p_yRange);
 
                 if (hit.Length < 1) continue;
-                
+
                 Debug.Log("Collider HIT");
                 m_tryCount++;
                 status = true;
@@ -225,14 +266,13 @@ namespace Level
             }
 
             if (!m_debugToggle || status) return status;
-            
+
             foreach (var direction in m_raycastDirections)
-            {
-                Debug.DrawRay(p_startPosition, direction.normalized * p_yRange, Color.red, m_debugRayDuration); 
-            }
+                Debug.DrawRay(p_startPosition, direction.normalized * p_yRange, Color.red, m_debugRayDuration);
 
             return status;
         }
+
         #endregion
 
         #region Step 2 Build Ladders
@@ -242,13 +282,12 @@ namespace Level
             foreach (var platform in m_activePlatforms)
             {
                 if (platform == null) return;
-                
+
                 platform.Link();
-                
             }
-            
+
             BreakLadders();
-            
+
             GenerateLadder();
         }
 
@@ -256,11 +295,11 @@ namespace Level
         {
             var availablePlatformsToBreak =
                 m_activePlatforms.Where(p_platform => p_platform.LinkCount > 1).ToList();
-            
-            
+
+
             if (m_laddersToBreak > availablePlatformsToBreak.Count)
                 m_laddersToBreak = availablePlatformsToBreak.Count;
-            
+
             for (var i = 0; i < m_laddersToBreak; i++)
             {
                 var randomPlatform = Random.Range(0, availablePlatformsToBreak.Count);
@@ -275,28 +314,27 @@ namespace Level
             var buildablePlatforms = m_activePlatforms.Where(p_platform => p_platform.LinkCount > 0).ToList();
 
             var spriteRenderer = m_ladderPrefab.GetComponent<SpriteRenderer>() == null
-                ? m_ladderPrefab.GetComponentInChildren<SpriteRenderer>() : null;
+                ? m_ladderPrefab.GetComponentInChildren<SpriteRenderer>()
+                : null;
 
             if (spriteRenderer == null) return;
-            
+
             var sprite = spriteRenderer.sprite;
 
             foreach (var platform in buildablePlatforms)
+            foreach (var bottomLink in platform.BottomLink.Data)
             {
-                foreach (var bottomLink in platform.BottomLink.Data)
-                {
-                    var link = Random.Range(0, bottomLink.m_rayStartPosition.Count);
-                    var endPosition = bottomLink.m_rayStartPosition[link];
-                    endPosition.y = bottomLink.m_hitPlatform.transform.position.y;
-                    
-                    var length = Mathf.Abs(endPosition.y - bottomLink.m_rayStartPosition[link].y);
-                    var heightScale = length / (spriteRenderer.bounds.extents.y * 2);
+                var link = Random.Range(0, bottomLink.m_rayStartPosition.Count);
+                var endPosition = bottomLink.m_rayStartPosition[link];
+                endPosition.y = bottomLink.m_hitPlatform.transform.position.y;
 
-                    GameObject ladder = Instantiate(m_ladderPrefab, bottomLink.m_rayStartPosition[link], Quaternion.identity,
-                        platform.gameObject.transform);
+                var length = Mathf.Abs(endPosition.y - bottomLink.m_rayStartPosition[link].y);
+                var heightScale = length / (spriteRenderer.bounds.extents.y * 2);
 
-                    ladder.transform.localScale = new Vector3(m_ladderWidth, heightScale, 1);
-                }
+                var ladder = Instantiate(m_ladderPrefab, bottomLink.m_rayStartPosition[link], Quaternion.identity,
+                    platform.gameObject.transform);
+
+                ladder.transform.localScale = new Vector3(m_ladderWidth, heightScale, 1);
             }
         }
 
@@ -304,7 +342,7 @@ namespace Level
         {
             return _instance == null ? null : _instance.m_ladderPrefab;
         }
-        
+
         public static Vector3[] GetRayXPositions(GameObject p_platform, int p_ladderRayCount, float p_platformOffset)
         {
             var positions = new Vector3[p_ladderRayCount];
@@ -317,18 +355,19 @@ namespace Level
                 positions[i].x = currentPosition;
                 positions[i].y = gameObjectPosition.y;
                 positions[i].z = gameObjectPosition.z;
-                
+
                 currentPosition += widthOffset;
             }
 
             return positions;
         }
-        
+
         public static Vector3[] GetRayXPositions(GameObject p_platform)
         {
             var positions = new Vector3[_instance.m_ladderRayCount];
             var gameObjectPosition = p_platform.transform.position;
-            var currentPosition = gameObjectPosition.x - _instance.m_selectedPlatformOffset.x + _instance.m_ladderBleedOffset;
+            var currentPosition = gameObjectPosition.x - _instance.m_selectedPlatformOffset.x +
+                                  _instance.m_ladderBleedOffset;
             var widthOffset = (_instance.m_selectedPlatformOffset.x - _instance.m_ladderBleedOffset) * 2 / 5;
 
             for (var i = 0; i < _instance.m_ladderRayCount; i++)
@@ -336,15 +375,103 @@ namespace Level
                 positions[i].x = currentPosition;
                 positions[i].y = gameObjectPosition.y;
                 positions[i].z = gameObjectPosition.z;
-                
+
                 currentPosition += widthOffset;
             }
 
             return positions;
         }
-        
 
         #endregion
+
+        #region Step 3 Build Pathing
+
+
+        private void BuildPath()
+        {
+            //get all the nodes that we can path too including ground;
+            var startNodes = GetPathingList();
+
+            //run as long as we have a start node available in the list
+            for (int i = 0; i < 2; i++)
+            {
+                //generate the final list
+                var finalNodeList = GetPathingList();
+                //generate a list of nodes to visit;
+                var nodestoVisit = GetPathingList();
+                //set the start node to the first node in the start node list
+                var node = startNodes[i];
+                //Remove said node from the list
+                nodestoVisit.Remove(node);
+                //Update the start node distance to 0
+                node.UpdateDistance(0);
+                
+                var adjacentPlatformQueue = new Queue<PlatformPath>(); 
+
+                //while an unvisted node is still present in the list keep looping
+                while (adjacentPlatformQueue.Count > 0)
+                {
+                    //combine all links
+                    var allHits = new HitPlatformResult();
+                    allHits.Data.AddRange(node.Node.BottomLink.Data);
+                    allHits.Data.AddRange(node.Node.TopLink.Data);
+                    
+                    foreach (var link in allHits.Data)
+                    {
+                        //calculate distance between nodes
+                        var distance = Vector3.Distance(node.Node.transform.position,
+                            link.m_hitPlatform.transform.position) + node.DistanceToDestination;
+                        
+                        //find node in node list corresponding to the platform
+                        var foundNode = finalNodeList.Where(p_node => p_node.Node.Equals(link.m_hitPlatform)).ToList();
+
+                        //if no node was found that means the node does not exist break
+                        if (!foundNode.Any())
+                        {
+                            Debug.Log("Node does not exist ");
+                            break;
+                        }
+
+                        //if the platform distance is lower then update the distance of the linked node and its parent to the current node we are visiting
+                        if (distance < foundNode[0].DistanceToDestination)
+                        {
+                            foundNode[0].UpdateDistance(distance);
+                            foundNode[0].UpdateParent(node.Node);
+                        }
+
+                        //checks to see if this node is present in the unvisited node list
+                        var unvisitedNode = nodestoVisit.Where(p_node => p_node.Node.Equals(link.m_hitPlatform)).ToList();
+                        
+                        //if no node is present then do not add it to the queue
+                        if (!unvisitedNode.Any())
+                        {
+                            Debug.Log("Node already visited not adding it to queue");
+                        }
+                        else
+                        {
+                            adjacentPlatformQueue.Enqueue(unvisitedNode[0]);
+                            nodestoVisit.Remove(unvisitedNode[0]);
+                        }
+                    }
+
+                    node = adjacentPlatformQueue.Dequeue();
+                }
+                
+                m_paths.Add(finalNodeList);
+            }
+        }
         
+        private List<PlatformPath> GetPathingList()
+        {
+            var pathingList = new List<PlatformPath>();
+            var platformGround = GameObject.FindGameObjectWithTag("Ground").GetComponent<Platform>();
+            
+            pathingList.AddRange(m_activePlatforms.Select(p_platform => new PlatformPath(p_platform, null, Mathf.Infinity)));
+            pathingList.Add(new PlatformPath(GameObject.FindGameObjectWithTag("Ground").GetComponent<Platform>(), null, Mathf.Infinity));
+            
+            return pathingList;
+        }
+
+        #endregion
     }
 }
