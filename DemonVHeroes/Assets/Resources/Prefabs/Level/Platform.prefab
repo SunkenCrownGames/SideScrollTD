@@ -51,6 +51,7 @@ MonoBehaviour:
   m_bottomLink:
     m_data: []
   m_linkCount: 0
+  m_paths: []
 --- !u!61 &2463397119173094264
 BoxCollider2D:
   m_ObjectHideFlags: 0

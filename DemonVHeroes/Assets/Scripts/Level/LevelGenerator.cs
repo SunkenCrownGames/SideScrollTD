@@ -1,12 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AngieTools;
 using AngieTools.Tools;
 using AngieTools.V2Tools;
+using AngieTools.V2Tools.Pathing.Dijkstra;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 // ReSharper disable Unity.PreferNonAllocApi
 // ReSharper disable ConditionIsAlwaysTrueOrFalse
@@ -18,6 +21,7 @@ namespace Level
         [SerializeField] private bool m_debugToggle;
 
         [Title("Toggles")] [SerializeField] private bool m_ladderToggle;
+
         private void Awake()
         {
             BindInstance();
@@ -30,6 +34,13 @@ namespace Level
                 BuildLadders();
                 BuildPath();
             }
+            
+            PathingManager.Instance.UpdatePaths(m_paths, m_activePlatforms);
+        }
+
+        private void Start()
+        {
+
         }
 
         private void BindInstance()
@@ -327,19 +338,22 @@ namespace Level
             var sprite = spriteRenderer.sprite;
 
             foreach (var platform in buildablePlatforms)
-            foreach (var bottomLink in platform.BottomLink.Data)
             {
-                var link = Random.Range(0, bottomLink.m_rayStartPosition.Count);
-                var endPosition = bottomLink.m_rayStartPosition[link];
-                endPosition.y = bottomLink.m_hitPlatform.transform.position.y;
+                foreach (var bottomLink in platform.BottomLink.Data)
+                {
+                    var link = Random.Range(0, bottomLink.m_rayStartPosition.Count);
+                    var endPosition = bottomLink.m_rayStartPosition[link];
+                    endPosition.y = bottomLink.m_hitPlatform.transform.position.y;
 
-                var length = Mathf.Abs(endPosition.y - bottomLink.m_rayStartPosition[link].y);
-                var heightScale = length / (spriteRenderer.bounds.extents.y * 2);
+                    var length = Mathf.Abs(endPosition.y - bottomLink.m_rayStartPosition[link].y);
+                    var heightScale = length / (spriteRenderer.bounds.extents.y * 2);
 
-                var ladder = Instantiate(m_ladderPrefab, bottomLink.m_rayStartPosition[link], Quaternion.identity,
-                    platform.gameObject.transform);
+                    var ladder = Instantiate(m_ladderPrefab, bottomLink.m_rayStartPosition[link], Quaternion.identity,
+                        platform.gameObject.transform);
 
-                ladder.transform.localScale = new Vector3(m_ladderWidth, heightScale, 1);
+                    ladder.transform.localScale = new Vector3(m_ladderWidth, heightScale, 1);
+                    ladder.GetComponent<Ladder>().UpdateNodes(platform, bottomLink.m_hitPlatform);
+                }
             }
         }
 
@@ -473,44 +487,10 @@ namespace Level
                     sb.Append(finalNode.ToString());
                 }
                 
-                Debug.Log(sb.ToString());
+                //Debug.Log(sb.ToString());
 
                 m_paths.Add(finalNodeList);
             }
-        }
-
-        public static Stack<Platform> GetPath(Platform p_startPlatform, Platform p_destinationPlatform)
-        {
-            if (_instance == null) return null;
-
-
-            var platformPath = new Stack<Platform>();
-            List<PlatformPath> finalPath = null;
-            
-            foreach (var path in _instance.m_paths)
-            {
-                // ReSharper disable once ForeachCanBeConvertedToQueryUsingAnotherGetEnumerator
-                foreach (var pathNode in path)
-                {
-                    if (pathNode.Node != p_startPlatform || pathNode.ParentNode != null) continue;
-                    
-                    Debug.Log($"Found Start Node: {pathNode.Node.name}");
-                    
-                    finalPath = path;
-                    break;
-                }
-            }
-
-            platformPath.Push(p_destinationPlatform);
-            var endNode = finalPath.Where(p_path => p_path.Node == p_destinationPlatform).ToList()[0];
-
-            while (endNode.ParentPlatformPathNode != null)
-            {
-                platformPath.Push(endNode.ParentNode);
-                endNode = endNode.ParentPlatformPathNode;
-            }
-
-            return platformPath;
         }
         
         private List<PlatformPath> GetPathingList()

@@ -5,6 +5,7 @@ using AngieTools.Tools.DataStructure;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using System;
+using AngieTools.V2Tools.Pathing.Dijkstra;
 using UnityScript.Lang;
 using Array = System.Array;
 
@@ -57,7 +58,7 @@ namespace Level
         public void Path()
         {
             Debug.Log($"Start Platform {_startPlatform.name} End Platform: {this.name}");
-            var path = LevelGenerator.GetPath(_startPlatform, this);
+            var path = PathingManager.GetPath(_startPlatform, this);
 
             while (path.Count > 0)
             {
