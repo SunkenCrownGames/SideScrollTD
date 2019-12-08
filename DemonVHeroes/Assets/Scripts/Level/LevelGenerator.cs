@@ -21,7 +21,7 @@ namespace Level
         [SerializeField] private bool m_debugToggle;
 
         [Title("Toggles")] [SerializeField] private bool m_ladderToggle;
-
+        
         private void Awake()
         {
             BindInstance();

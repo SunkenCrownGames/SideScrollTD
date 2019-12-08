@@ -26,6 +26,7 @@
           <e p="GameObjectTools" t="Include">
             <e p="CameraTools.cs" t="Include" />
             <e p="DontDestroy.cs" t="Include" />
+            <e p="PhysicsObject.cs" t="Include" />
           </e>
           <e p="PlayfabCustom" t="Include">
             <e p="Login" t="Include">
@@ -357,6 +358,7 @@
         <e p="Scripts" t="Include">
           <e p="Enemy" t="Include">
             <e p="EnemyPathing.cs" t="Include" />
+            <e p="EnemyState.cs" t="Include" />
             <e p="EnemyStats.cs" t="Include" />
             <e p="EnemyTest.cs" t="Include" />
           </e>

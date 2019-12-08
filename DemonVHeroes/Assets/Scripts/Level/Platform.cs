@@ -6,7 +6,6 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using System;
 using AngieTools.V2Tools.Pathing.Dijkstra;
-using UnityScript.Lang;
 using Array = System.Array;
 
 namespace Level
