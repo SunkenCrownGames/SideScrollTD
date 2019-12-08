@@ -189,7 +189,7 @@ namespace Level
 
             if (!generated)
             {
-                Debug.Log("Failled To Create Returning");
+                //Debug.Log("Failled To Create Returning");
                 return null;
             }
 
@@ -308,6 +308,7 @@ namespace Level
             {
                 var randomPlatform = Random.Range(0, availablePlatformsToBreak.Count);
                 var platform = availablePlatformsToBreak[randomPlatform];
+                
                 platform.BreakLadder();
                 availablePlatformsToBreak.RemoveAt(randomPlatform);
             }
@@ -424,7 +425,7 @@ namespace Level
                     {
                         //calculate distance between nodes
                         var distance = Vector3.Distance(node.Node.transform.position,
-                            link.m_hitPlatform.transform.position);
+                            link.m_hitPlatform.transform.position) + node.DistanceToDestination;
                         
                         //find node in node list corresponding to the platform
                         var foundNode = finalNodeList.Where(p_node => p_node.Node.Equals(link.m_hitPlatform)).ToList();
@@ -442,6 +443,7 @@ namespace Level
                             //Debug.Log("Found Shorter Path");
                             foundNode[0].UpdateDistance(distance);
                             foundNode[0].UpdateParent(node.Node);
+                            foundNode[0].UpdateParentNode(node);
                         }
 
                         //checks to see if this node is present in the unvisited node list
@@ -454,7 +456,7 @@ namespace Level
                         }
                         else
                         {
-                            adjacentPlatformQueue.Enqueue(unvisitedNode[0]);
+                            adjacentPlatformQueue.Enqueue(foundNode[0]);
                             nodestoVisit.Remove(unvisitedNode[0]);
                         }
                     }
@@ -470,6 +472,8 @@ namespace Level
                 {
                     sb.Append(finalNode.ToString());
                 }
+                
+                Debug.Log(sb.ToString());
 
                 m_paths.Add(finalNodeList);
             }
@@ -490,6 +494,8 @@ namespace Level
                 {
                     if (pathNode.Node != p_startPlatform || pathNode.ParentNode != null) continue;
                     
+                    Debug.Log($"Found Start Node: {pathNode.Node.name}");
+                    
                     finalPath = path;
                     break;
                 }
@@ -498,10 +504,10 @@ namespace Level
             platformPath.Push(p_destinationPlatform);
             var endNode = finalPath.Where(p_path => p_path.Node == p_destinationPlatform).ToList()[0];
 
-            while (endNode.ParentNode != null)
+            while (endNode.ParentPlatformPathNode != null)
             {
                 platformPath.Push(endNode.ParentNode);
-                endNode = finalPath.Where(p_path => p_path.Node == endNode.ParentNode).ToList()[0];
+                endNode = endNode.ParentPlatformPathNode;
             }
 
             return platformPath;
@@ -512,8 +518,8 @@ namespace Level
             var pathingList = new List<PlatformPath>();
             var platformGround = GameObject.FindGameObjectWithTag("Ground").GetComponent<Platform>();
             
-            pathingList.AddRange(m_activePlatforms.Select(p_platform => new PlatformPath(p_platform, null, Mathf.Infinity)));
-            pathingList.Add(new PlatformPath(GameObject.FindGameObjectWithTag("Ground").GetComponent<Platform>(), null, Mathf.Infinity));
+            pathingList.AddRange(m_activePlatforms.Select(p_platform => new PlatformPath(p_platform, null, null, Mathf.Infinity)));
+            pathingList.Add(new PlatformPath(GameObject.FindGameObjectWithTag("Ground").GetComponent<Platform>(), null, null, Mathf.Infinity));
             
             return pathingList;
         }

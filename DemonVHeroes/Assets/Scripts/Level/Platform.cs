@@ -22,6 +22,9 @@ namespace Level
 
         [SerializeField] private List<PlatformPath> m_paths;
 
+        
+        private static Platform _startPlatform;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -43,11 +46,18 @@ namespace Level
             Array.Clear(hits, 0, hits.Length);
             LinkTop(hits, hitPositions);
         }
+
+        [Button("Update Start Platform")]
+        public void UpdateStartPlatform()
+        {
+            _startPlatform = this;
+        }
         
         [Button("Generate Path")]
         public void Path()
         {
-            var path = LevelGenerator.GetPath(GameObject.FindGameObjectWithTag("Ground").GetComponent<Platform>(), this);
+            Debug.Log($"Start Platform {_startPlatform.name} End Platform: {this.name}");
+            var path = LevelGenerator.GetPath(_startPlatform, this);
 
             while (path.Count > 0)
             {
@@ -103,8 +113,6 @@ namespace Level
                     
                     var result = m_topLink.AddToResults(hit.collider.GetComponent<Platform>(), Direction.TOP, position);
 
-                    if (result) m_linkCount++;
-                    
                     break;
                 }
             }
@@ -113,9 +121,18 @@ namespace Level
         public void BreakLadder()
         {
             var linkToBreak = UnityEngine.Random.Range(0, m_bottomLink.Data.Count);
-            m_bottomLink.Data[linkToBreak].m_hitPlatform.TopLink.Data.Remove(m_bottomLink.Data[linkToBreak]);
+            var platform = m_bottomLink.Data[linkToBreak].m_hitPlatform;
             m_bottomLink.Data.RemoveAt(linkToBreak);
             m_linkCount--;
+
+            for (var i = 0; i < platform.TopLink.Data.Count; i++)
+            {
+                if (!platform.TopLink.Data[i].m_hitPlatform.Equals(this)) continue;
+                
+                platform.TopLink.Data.RemoveAt(i);
+                //Debug.Log("Found Problematic Platform;");
+                break;
+            }
         }
 
         public List<Ladder> Ladders => m_ladders;

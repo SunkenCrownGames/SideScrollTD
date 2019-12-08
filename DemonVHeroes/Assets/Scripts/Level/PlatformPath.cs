@@ -7,22 +7,28 @@ namespace Level
     [System.Serializable]
     public class PlatformPath
     {
-        public PlatformPath(Platform p_node, Platform p_parentNode, float p_distanceToDestination)
+        public PlatformPath(Platform p_node, Platform p_parentNode, PlatformPath p_parentPlatformPathNode, float p_distanceToDestination)
         {
             m_node = p_node;
             m_parentNode = p_parentNode;
             m_distanceToDestination = p_distanceToDestination;
+            m_parentPlatformPathNode = p_parentPlatformPathNode;
         }
 
         [SerializeField] private Platform m_node;
         [SerializeField] private Platform m_parentNode;
+        [SerializeField] private PlatformPath m_parentPlatformPathNode;
         [SerializeField] private float m_distanceToDestination;
 
         public Platform Node => m_node;
 
         public Platform ParentNode => m_parentNode;
 
+        public PlatformPath ParentPlatformPathNode => m_parentPlatformPathNode;
+
         public float DistanceToDestination => m_distanceToDestination;
+        
+        
 
         public void UpdateDistance(float p_distance)
         {
@@ -32,6 +38,11 @@ namespace Level
         public void UpdateParent(Platform p_node)
         {
             m_parentNode = p_node;
+        }
+
+        public void UpdateParentNode(PlatformPath p_parentPlatformPathNode)
+        {
+            m_parentPlatformPathNode = p_parentPlatformPathNode;
         }
 
         public override string ToString()
