@@ -18,13 +18,6 @@ namespace Level
         [SerializeField] private bool m_debugToggle;
 
         [Title("Toggles")] [SerializeField] private bool m_ladderToggle;
-
-        #region  Pathing
-
-        private List<List<PlatformPath>> m_paths;
-
-        #endregion
-
         private void Awake()
         {
             BindInstance();
@@ -86,8 +79,17 @@ namespace Level
         [FoldoutGroup("Platform")] [SerializeField]
         private ScreenRange m_yScreenRestriction;
 
+
+        private int m_spawnedPlatformCount = 0;
         #endregion
 
+        #region  Pathing
+
+        private List<List<PlatformPath>> m_paths;
+
+        #endregion
+
+        
         #region  Ladder
 
         [ShowIfGroup("m_ladderToggle")]
@@ -111,7 +113,7 @@ namespace Level
         private int m_ladderRayCount;
 
         #endregion
-
+        
         #region Debug
 
         [FoldoutGroup("Debug")] [ShowIf("m_debugToggle")] [SerializeField]
@@ -139,7 +141,7 @@ namespace Level
         private GameObject[] m_platforms;
 
         #endregion
-
+        
 
         #region Step 1 Generate Platforms
 
@@ -193,8 +195,11 @@ namespace Level
 
             Debug.Log($"Successfully created platform after {m_tryCount} Tries");
             var spawnedPlatform = Instantiate(m_selectedPlatform, position, Quaternion.identity, m_platformParent);
+            spawnedPlatform.name = $"Platform {m_spawnedPlatformCount}";
             m_tryCount = 0;
 
+            m_spawnedPlatformCount++;
+            
             return spawnedPlatform;
         }
 
@@ -258,8 +263,7 @@ namespace Level
                 var hit = Physics2D.RaycastAll(p_startPosition, direction.normalized, p_yRange);
 
                 if (hit.Length < 1) continue;
-
-                Debug.Log("Collider HIT");
+                
                 m_tryCount++;
                 status = true;
                 break;
@@ -393,14 +397,14 @@ namespace Level
             var startNodes = GetPathingList();
 
             //run as long as we have a start node available in the list
-            for (int i = 0; i < 2; i++)
+            for (var i = 0; i < startNodes.Count; i++)
             {
                 //generate the final list
                 var finalNodeList = GetPathingList();
                 //generate a list of nodes to visit;
                 var nodestoVisit = GetPathingList();
                 //set the start node to the first node in the start node list
-                var node = startNodes[i];
+                var node = finalNodeList[i];
                 //Remove said node from the list
                 nodestoVisit.Remove(node);
                 //Update the start node distance to 0
@@ -409,7 +413,7 @@ namespace Level
                 var adjacentPlatformQueue = new Queue<PlatformPath>(); 
 
                 //while an unvisted node is still present in the list keep looping
-                while (adjacentPlatformQueue.Count > 0)
+                while (nodestoVisit.Count > 0)
                 {
                     //combine all links
                     var allHits = new HitPlatformResult();
@@ -420,7 +424,7 @@ namespace Level
                     {
                         //calculate distance between nodes
                         var distance = Vector3.Distance(node.Node.transform.position,
-                            link.m_hitPlatform.transform.position) + node.DistanceToDestination;
+                            link.m_hitPlatform.transform.position);
                         
                         //find node in node list corresponding to the platform
                         var foundNode = finalNodeList.Where(p_node => p_node.Node.Equals(link.m_hitPlatform)).ToList();
@@ -428,13 +432,14 @@ namespace Level
                         //if no node was found that means the node does not exist break
                         if (!foundNode.Any())
                         {
-                            Debug.Log("Node does not exist ");
+                            //Debug.Log("Node does not exist ");
                             break;
                         }
 
                         //if the platform distance is lower then update the distance of the linked node and its parent to the current node we are visiting
                         if (distance < foundNode[0].DistanceToDestination)
                         {
+                            //Debug.Log("Found Shorter Path");
                             foundNode[0].UpdateDistance(distance);
                             foundNode[0].UpdateParent(node.Node);
                         }
@@ -445,7 +450,7 @@ namespace Level
                         //if no node is present then do not add it to the queue
                         if (!unvisitedNode.Any())
                         {
-                            Debug.Log("Node already visited not adding it to queue");
+                            //Debug.Log("Node already visited not adding it to queue");
                         }
                         else
                         {
@@ -454,11 +459,52 @@ namespace Level
                         }
                     }
 
-                    node = adjacentPlatformQueue.Dequeue();
+                    if(adjacentPlatformQueue.Count > 0)
+                        node = adjacentPlatformQueue.Dequeue();
                 }
+
                 
+                StringBuilder sb = new StringBuilder();
+                
+                foreach (var finalNode in finalNodeList)
+                {
+                    sb.Append(finalNode.ToString());
+                }
+
                 m_paths.Add(finalNodeList);
             }
+        }
+
+        public static Stack<Platform> GetPath(Platform p_startPlatform, Platform p_destinationPlatform)
+        {
+            if (_instance == null) return null;
+
+
+            var platformPath = new Stack<Platform>();
+            List<PlatformPath> finalPath = null;
+            
+            foreach (var path in _instance.m_paths)
+            {
+                // ReSharper disable once ForeachCanBeConvertedToQueryUsingAnotherGetEnumerator
+                foreach (var pathNode in path)
+                {
+                    if (pathNode.Node != p_startPlatform || pathNode.ParentNode != null) continue;
+                    
+                    finalPath = path;
+                    break;
+                }
+            }
+
+            platformPath.Push(p_destinationPlatform);
+            var endNode = finalPath.Where(p_path => p_path.Node == p_destinationPlatform).ToList()[0];
+
+            while (endNode.ParentNode != null)
+            {
+                platformPath.Push(endNode.ParentNode);
+                endNode = finalPath.Where(p_path => p_path.Node == endNode.ParentNode).ToList()[0];
+            }
+
+            return platformPath;
         }
         
         private List<PlatformPath> GetPathingList()

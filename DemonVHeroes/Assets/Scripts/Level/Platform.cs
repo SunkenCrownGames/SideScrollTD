@@ -43,6 +43,17 @@ namespace Level
             Array.Clear(hits, 0, hits.Length);
             LinkTop(hits, hitPositions);
         }
+        
+        [Button("Generate Path")]
+        public void Path()
+        {
+            var path = LevelGenerator.GetPath(GameObject.FindGameObjectWithTag("Ground").GetComponent<Platform>(), this);
+
+            while (path.Count > 0)
+            {
+                Debug.Log(path.Pop().name);
+            }
+        }
 
         private void OnMouseDown()
         {

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 namespace Level
@@ -31,6 +32,19 @@ namespace Level
         public void UpdateParent(Platform p_node)
         {
             m_parentNode = p_node;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            string parentNode = (m_parentNode == null) ? "null" :  m_parentNode.name;
+            
+            sb.AppendLine("Node: " + m_node.name);
+            sb.AppendLine("Node Parent: "  + parentNode);
+            sb.AppendLine("Node Distance: " + m_distanceToDestination);
+            
+            return sb.ToString();
         }
     }
 }
