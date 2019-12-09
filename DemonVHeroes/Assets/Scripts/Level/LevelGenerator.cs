@@ -219,7 +219,7 @@ namespace Level
         /// </summary>
         private void GenerateSpriteOffset()
         {
-            var sr = m_selectedPlatform.GetComponentInChildren<SpriteRenderer>();
+            var sr = m_selectedPlatform.GetComponent<SpriteRenderer>();
             m_selectedPlatformOffset = sr.bounds.extents;
         }
 

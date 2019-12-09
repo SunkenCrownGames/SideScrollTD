@@ -8,8 +8,8 @@ namespace AngieTools.UI
     public class UIMonoBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler
     {
 
-        [SerializeField]
-        private bool m_debugPointers = false;
+        [SerializeField] protected bool m_onUi;
+        [SerializeField] private bool m_debugPointers = false;
 
         #region Default Pointer Functions
 
@@ -35,6 +35,8 @@ namespace AngieTools.UI
             {
                 Debug.Log("Pointer Entered UI");
             }
+
+            m_onUi = true;
         }
 
         public virtual void OnPointerExit(PointerEventData eventData)
@@ -43,6 +45,8 @@ namespace AngieTools.UI
             {
                 Debug.Log("Pointer Exit UI");
             }
+
+            m_onUi = false;
         }
 
         public virtual void OnPointerUp(PointerEventData eventData)
@@ -66,5 +70,7 @@ namespace AngieTools.UI
         {
 
         }
+
+        public bool OnUi => m_onUi;
     }
 }

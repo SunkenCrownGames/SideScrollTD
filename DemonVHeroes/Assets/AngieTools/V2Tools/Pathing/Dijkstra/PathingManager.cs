@@ -80,7 +80,11 @@ namespace AngieTools.V2Tools.Pathing.Dijkstra
             return Instance.m_activePlatforms[platformPosition];
 
         }
-        
+
+        public List<List<PlatformPath>> Paths => m_paths;
+
+        public List<Platform> ActivePlatforms => m_activePlatforms;
+
         public static PathingManager Instance { get; private set; }
     }
 }

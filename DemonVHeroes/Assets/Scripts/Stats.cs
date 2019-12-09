@@ -9,6 +9,7 @@ public class Stats
     [SerializeField] protected float m_attackSpeed;
     [SerializeField] protected float m_attackDamage;
     [SerializeField] protected float m_range;
+    [SerializeField] protected float m_movementSpeed;
     public Stats(float p_health, float p_attackSpeed, float p_attackDamage)
     {
         m_health = p_health;
@@ -24,4 +25,6 @@ public class Stats
     public float Range => m_range;
 
     public float AttackDamage => m_attackDamage;
+
+    public float MovementSpeed => m_movementSpeed;
 }

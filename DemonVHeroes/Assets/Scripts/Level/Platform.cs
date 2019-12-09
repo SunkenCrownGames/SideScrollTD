@@ -6,18 +6,24 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using System;
 using AngieTools.V2Tools.Pathing.Dijkstra;
+using Spawners;
 using Array = System.Array;
 
 namespace Level
 {
     public class Platform : MonoBehaviour
     {
+
+        [Title("Spawners")]
+        [SerializeField] private List<Spawner> m_spawnerZones;
+        
         [Title("Links")] 
         [SerializeField] private List<Ladder> m_ladders;
         [SerializeField] private HitPlatformResult m_topLink;
         [ShowInInspector] [SerializeField] private HitPlatformResult m_bottomLink;
 
         [Title("Data")] 
+        [SerializeField] private SpriteRenderer m_sr;
         [SerializeField] private int m_linkCount = 0;
 
         [SerializeField] private List<PlatformPath> m_paths;
@@ -67,7 +73,7 @@ namespace Level
 
         private void OnMouseDown()
         {
-            
+
         }
 
         private void LinkBottom(RaycastHit2D[] p_hits, Vector3[] p_hitPositions)
@@ -141,6 +147,24 @@ namespace Level
 
         public HitPlatformResult BottomLink => m_bottomLink;
 
+        public SpriteRenderer Sr => m_sr;
+
+        public void UpdateSpawners()
+        {
+            foreach (var spawnerZone in m_spawnerZones)
+            {
+                spawnerZone.UpdateSpawnerVisual();
+            }
+        }
+
+        public void DisableSpawners()
+        {
+            foreach (var spawnerZone in m_spawnerZones)
+            {
+                spawnerZone.DisableSpawnerVisual();
+            } 
+        }
+        
         public int LinkCount => m_linkCount;
     }
 }

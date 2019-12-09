@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\jessi\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\jessi\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_DemonVHeroes.-1847253412.00" t="ExcludeRecursive" />
-    <e p="C:\Users\jessi\Documents\GitHub\SideScrollTD\DemonVHeroes" t="IncludeRecursive">
+    <e p="C:\Users\Boss\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Boss\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_DemonVHeroes.119100901.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Boss\Documents\Gits\SSTD\DemonVHeroes" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -374,21 +374,25 @@
             <e p="PlatformPath.cs" t="Include" />
             <e p="PlatformRayData.cs" t="Include" />
           </e>
-          <e p="Player" t="Include">
-            <e p="Inventory.cs" t="Include" />
-            <e p="InventoryUi.cs" t="Include" />
-            <e p="StatUi.cs" t="Include" />
-            <e p="TurretInfoUi.cs" t="Include" />
+          <e p="Soldier" t="Include">
+            <e p="Data" t="Include">
+              <e p="SoldierData.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Spawners" t="Include">
+            <e p="Data" t="Include">
+              <e p="SpawnerData.cs" t="Include" />
+              <e p="SpawnerDatabase.cs" t="Include" />
+            </e>
+            <e p="Spawner.cs" t="Include" />
+            <e p="SpawnerController.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="SpawnerSlot.cs" t="Include" />
+              <e p="SpawnerUIController.cs" t="Include" />
+            </e>
           </e>
           <e p="SpriteState.cs" t="Include" />
           <e p="Stats.cs" t="Include" />
-          <e p="Turrets" t="Include">
-            <e p="Data" t="Include">
-              <e p="TurretData.cs" t="Include" />
-              <e p="TurretDatabase.cs" t="Include" />
-            </e>
-            <e p="TurretSlotUiController.cs" t="Include" />
-          </e>
         </e>
         <e p="Spine" t="Include">
           <e p="Editor" t="Include">

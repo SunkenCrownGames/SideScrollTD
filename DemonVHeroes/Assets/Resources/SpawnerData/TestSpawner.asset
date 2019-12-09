@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f084d4966a732e48a335daac1132075, type: 3}
+  m_Name: TestSpawner
+  m_EditorClassIdentifier: 
+  m_spawnerName: Test Spawner
+  m_spawnerDescription: Will Spawn Test Soldiers
+  m_spawnerPrefab: {fileID: 0}
+  m_soldierData: {fileID: 11400000, guid: d95b0ea0439d0a146be80d5cbe26699d, type: 2}
+  m_soldierIcon: {fileID: 21300000, guid: ed6174cfc03074afa9523d9500a2c7c0, type: 3}
+  m_soldierSpawnCount: 3
