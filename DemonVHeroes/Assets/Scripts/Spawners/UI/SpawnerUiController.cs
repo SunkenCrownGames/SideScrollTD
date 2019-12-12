@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AngieTools.UI;
 using AngieTools.V2Tools.Pathing.Dijkstra;
+using Player.UI;
 using Sirenix.OdinInspector;
 using Spawners.Data;
 using UnityEngine;
@@ -10,13 +11,17 @@ namespace Spawners.UI
 {
     public class SpawnerUiController : UIMonoBehaviour
     {
-        [SerializeField] private SpawnerSlot m_selectedSlot;
+        [Title("Scene Components")]
+        [SceneObjectsOnly] [Required] [SerializeField] private SetUpUi m_setUpUi;
+        [SceneObjectsOnly] [SerializeField] private List<SpawnerSlot> m_slots;
+        [SceneObjectsOnly] [SerializeField] private GameObject m_selectedObject;
         
-        [SerializeField] private List<SpawnerSlot> m_slots;
+        [Title("Data")]
         [SerializeField] private SpawnerDatabase m_database;
-        
-        [SerializeField] private GameObject m_selectedObject;
-        
+
+        [Title("Dynamic Data")]
+        [SceneObjectsOnly] [SerializeField] private SpawnerSlot m_selectedSlot;
+
         private void Awake()
         {
             BindInstance();
@@ -40,9 +45,9 @@ namespace Spawners.UI
             if(Instance != null) Destroy(gameObject);
 
             Instance = this;
-            gameObject.SetActive(false);
         }
 
+        [Title("Debug Buttons")]
         [Button("Update Slots")]
         public void UpdateSelection()
         {
@@ -91,7 +96,10 @@ namespace Spawners.UI
             m_selectedSlot = p_slot;
             m_selectedObject.transform.position = m_selectedSlot.transform.position;
             m_selectedObject.gameObject.SetActive(true);
+            m_setUpUi.UpdateCost(p_slot.Data.Cost);
         }
+
+        public SpawnerSlot SelectedSlot => m_selectedSlot;
 
         public static SpawnerUiController Instance { get; private set; }
     }

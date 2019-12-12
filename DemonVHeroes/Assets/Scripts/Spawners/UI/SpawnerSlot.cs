@@ -11,10 +11,13 @@ namespace Spawners.UI
     {
         [Title("Components")]
         [SceneObjectsOnly] [SerializeField] private Image m_icon;
+
+        private SpawnerData m_data;
+        
         // Start is called before the first frame update
         void Start()
         {
-        
+            
         }
 
         // Update is called once per frame
@@ -37,7 +40,10 @@ namespace Spawners.UI
         {
             if(p_spawnerData == null) gameObject.SetActive(false);
 
+            m_data = p_spawnerData;
             m_icon.sprite = p_spawnerData.SoldierIcon;
         }
+
+        public SpawnerData Data => m_data;
     }
 }

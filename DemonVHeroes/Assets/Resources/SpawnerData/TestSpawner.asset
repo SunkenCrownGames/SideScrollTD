@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f084d4966a732e48a335daac1132075, type: 3}
   m_Name: TestSpawner
   m_EditorClassIdentifier: 
+  m_iD: 0
   m_spawnerName: Test Spawner
   m_spawnerDescription: Will Spawn Test Soldiers
-  m_spawnerPrefab: {fileID: 0}
-  m_soldierData: {fileID: 11400000, guid: d95b0ea0439d0a146be80d5cbe26699d, type: 2}
+  m_spawnerSpinePrefab: {fileID: 0}
+  m_spawnerSpritePrefab: {fileID: 4348692807486644261, guid: 002e46616ea32fc449b9f9cc70b9c34a,
+    type: 3}
   m_soldierIcon: {fileID: 21300000, guid: ed6174cfc03074afa9523d9500a2c7c0, type: 3}
+  m_spriteType: 1
+  m_soldierData: {fileID: 11400000, guid: d95b0ea0439d0a146be80d5cbe26699d, type: 2}
   m_soldierSpawnCount: 3
+  m_cost: 500

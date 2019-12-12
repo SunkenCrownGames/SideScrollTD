@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Boss\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Boss\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_DemonVHeroes.119100901.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Boss\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Boss\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_DemonVHeroes.119100901.00" t="ExcludeRecursive" />
     <e p="C:\Users\Boss\Documents\Gits\SSTD\DemonVHeroes" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -374,6 +374,16 @@
             <e p="PlatformPath.cs" t="Include" />
             <e p="PlatformRayData.cs" t="Include" />
           </e>
+          <e p="Player" t="Include">
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="PlayerInfo" t="Include">
+                <e p="PlayerInfoComponent.cs" t="Include" />
+                <e p="PlayerInfoUI.cs" t="Include" />
+              </e>
+              <e p="SetUpUI.cs" t="Include" />
+            </e>
+          </e>
           <e p="Soldier" t="Include">
             <e p="Data" t="Include">
               <e p="SoldierData.cs" t="Include" />
@@ -384,8 +394,13 @@
               <e p="SpawnerData.cs" t="Include" />
               <e p="SpawnerDatabase.cs" t="Include" />
             </e>
+            <e p="Ghost" t="Include">
+              <e p="GhostSpawner.cs" t="Include" />
+            </e>
             <e p="Spawner.cs" t="Include" />
             <e p="SpawnerController.cs" t="Include" />
+            <e p="SpawnerIdentifier.cs" t="Include" />
+            <e p="SpawnerManager.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="SpawnerSlot.cs" t="Include" />
               <e p="SpawnerUIController.cs" t="Include" />

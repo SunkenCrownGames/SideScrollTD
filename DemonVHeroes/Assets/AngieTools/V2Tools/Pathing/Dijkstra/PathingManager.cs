@@ -12,6 +12,7 @@ namespace AngieTools.V2Tools.Pathing.Dijkstra
         private List<List<PlatformPath>> m_paths;
         private List<Platform> m_activePlatforms;
 
+        [SerializeField] private Transform m_spawnersParent;
 
         private void Awake()
         {
@@ -84,6 +85,8 @@ namespace AngieTools.V2Tools.Pathing.Dijkstra
         public List<List<PlatformPath>> Paths => m_paths;
 
         public List<Platform> ActivePlatforms => m_activePlatforms;
+
+        public Transform SpawnersParent => m_spawnersParent;
 
         public static PathingManager Instance { get; private set; }
     }

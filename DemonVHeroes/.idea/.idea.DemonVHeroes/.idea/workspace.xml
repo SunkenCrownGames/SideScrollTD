@@ -5,310 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/SpawnerZone0.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/SpawnerZone0.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/ReverseRoguelike/SelectedSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/ReverseRoguelike/SelectedSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/ReverseRoguelike/SpawnerSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/ReverseRoguelike/SpawnerSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/AvailableBoxAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/AvailableBoxAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00000.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00001.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00002.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00003.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00004.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00005.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00006.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00007.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00008.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00009.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00009.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00010.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00010.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00011.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00011.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00012.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00012.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00013.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00014.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00015.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00015.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00016.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00016.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00017.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00017.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00018.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00018.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00019.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00019.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00020.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00020.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00021.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00021.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00022.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00022.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00023.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00023.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00024.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00025.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00025.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00026.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00026.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00027.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00027.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00028.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00028.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00029.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00029.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00030.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00030.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00031.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00031.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00032.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00032.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00033.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00033.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00034.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00034.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00035.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00035.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00036.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00036.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00037.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00037.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00038.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00038.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00039.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00039.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00040.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00040.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00041.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00041.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00042.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00042.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00043.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00043.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00044.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00044.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00045.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00045.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00046.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00046.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00047.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00047.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00048.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00048.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00049.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00049.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00050.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00050.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00051.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00051.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00052.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00052.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00053.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00053.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00054.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00054.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00055.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00055.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00056.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00056.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00057.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00057.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00058.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00059.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00059.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00060.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00060.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00061.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00061.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00062.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00062.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00063.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00063.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00064.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00064.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00065.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00065.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00066.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00066.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00067.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00067.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00068.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00068.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00069.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00069.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00070.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00070.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00071.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00071.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00072.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00072.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00073.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00073.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00074.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00074.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00075.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00075.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00076.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00076.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00077.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00077.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00078.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00078.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00079.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00079.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00080.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00080.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00081.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00081.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00082.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00082.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00083.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00083.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00084.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00084.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00085.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00085.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00086.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00086.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00087.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00087.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00088.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00088.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00089.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00089.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00090.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00090.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00091.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00091.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00092.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00092.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00093.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00093.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00094.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00094.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00095.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00095.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00096.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00096.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00097.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00097.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00098.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00098.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00099.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00099.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00100.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00101.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00101.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00102.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00102.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00103.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00103.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00104.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00104.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00105.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00105.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00106.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00106.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00107.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00107.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00108.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00108.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00109.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00109.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00110.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00110.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00111.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00111.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00112.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00112.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00113.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00113.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00114.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00114.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00115.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00115.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00116.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00116.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00117.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00117.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00118.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00118.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00119.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/Spawn_Indicator1_00119.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/SpawnerZone0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SFX/AvailableBox/SpawnerZone0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SoldiersData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SoldiersData/TestSoldier.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SoldiersData/TestSoldier.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SpawnerData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SpawnerData/SpawnerDatabase.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SpawnerData/SpawnerDatabase.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SpawnerData/TestSpawner.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/SpawnerData/TestSpawner.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Soldier/Data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Soldier/Data/SoldierData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Soldier/Data/SoldierData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerDatabase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawners.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AngieTools/Tools/UI/UIMonoBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AngieTools/Tools/UI/UIMonoBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ground Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ground Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ladder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ladder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Platform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Modifier Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Modifier Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Stat.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Stat.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/TurretSlot1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/TurretSlot1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/TurretDatabase.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/TurretDatabase.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/SpawnerZone0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/SpawnerZone0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpawnerData/TestSpawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpawnerData/TestSpawner.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/InventoryUi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/InventoryUi.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StatUi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StatUi.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets/Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -319,55 +44,54 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerDatabase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Soldier/Data/SoldierData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/Range.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/PhysicsObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPathing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformPath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Ground.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Ladder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A278EBD4-4AB0-472B-B8E6-38263E06CD61/10/5751410e/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/Range.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerIdentifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/PhysicsObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Ghost/GhostSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Soldier/Data/SoldierData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/UI/UIMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/SpriteState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InventoryUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/Data/TurretDatabase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Debug/GameDebugger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/StatUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Turrets/TurretSlotUiController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/PathFinding/AStar/AStarNode.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Grid.cs" />
@@ -398,17 +122,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/Data/SoldierDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/Data/SoldierData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerUiController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/GhostSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerIdentifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Ghost/GhostSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" />
       </list>
     </option>
   </component>
@@ -416,43 +150,47 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -488,6 +226,11 @@
       <workItem from="1575831383864" duration="15749000" />
       <workItem from="1575872793174" duration="599000" />
       <workItem from="1575873439410" duration="15364000" />
+      <workItem from="1575962455302" duration="3275000" />
+      <workItem from="1576043146874" duration="611000" />
+      <workItem from="1576099710913" duration="2362000" />
+      <workItem from="1576105609636" duration="11848000" />
+      <workItem from="1576141720089" duration="277000" />
     </task>
     <servers />
   </component>
@@ -511,7 +254,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="194" key="RiderGenerateDialog" timestamp="1576141863988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576141863988" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

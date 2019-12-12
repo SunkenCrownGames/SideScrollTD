@@ -7,6 +7,7 @@ using UnityEngine;
 using System;
 using AngieTools.V2Tools.Pathing.Dijkstra;
 using Spawners;
+using Spawners.UI;
 using Array = System.Array;
 
 namespace Level
@@ -151,18 +152,24 @@ namespace Level
 
         public void UpdateSpawners()
         {
+            // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
             foreach (var spawnerZone in m_spawnerZones)
             {
+                if (SpawnerUiController.Instance.SelectedSlot == null) break;
+                
                 spawnerZone.UpdateSpawnerVisual();
             }
         }
 
         public void DisableSpawners()
         {
+            // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
             foreach (var spawnerZone in m_spawnerZones)
             {
+                if (SpawnerUiController.Instance.SelectedSlot == null) break;
+
                 spawnerZone.DisableSpawnerVisual();
-            } 
+            }
         }
         
         public int LinkCount => m_linkCount;
