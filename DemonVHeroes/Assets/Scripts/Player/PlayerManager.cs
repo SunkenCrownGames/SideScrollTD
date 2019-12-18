@@ -8,10 +8,7 @@ namespace Player
     {
         [Title("Data")]
         [SerializeField] private float m_gold;
-        
-        [Title("Required Components")]
-        [SerializeField] [Required] private SetUpUi m_setUpUi;
-        
+
         // Start is called before the first frame update
         private void Start()
         {
@@ -26,21 +23,35 @@ namespace Player
 
         private void UpdateGold()
         {
-            m_setUpUi.UpdateGold(m_gold);
+            GameManager.Instance.UiManager.SetupUi.UpdateGold(m_gold);
         }
-
-        private void SetGold(float p_gold)
+        
+        public void SetGold(float p_gold)
         {
             m_gold = p_gold;
+            
+            UpdateGold();
         }
 
-        private void IncreaseGold(float p_gold)
+        public void IncreaseGold(float p_gold)
         {
             m_gold += p_gold;
+            
+            UpdateGold();
         }
-        private void DecreaseGold(float p_gold)
+        public void DecreaseGold(float p_gold)
         {
             m_gold -= p_gold;
+
+            if (m_gold < 0)
+                m_gold = 0;
+            
+            UpdateGold();
+        }
+
+        public bool CheckGold(float p_cost)
+        {
+            return m_gold >= p_cost;
         }
     }
 }

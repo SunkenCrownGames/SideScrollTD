@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Boss\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Boss\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_DemonAdventures.1356283497.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Boss\Documents\Gits\SSTD\DemonAdventures" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="AngieTools" t="Include">
+          <e p="Editor" t="Include">
+            <e p="CustomHierarchy.cs" t="Include" />
+            <e p="Data" t="Include">
+              <e p="HierarchyData" t="Include">
+                <e p="HierarchyDatabase.cs" t="Include" />
+                <e p="HierarchyObjectLink.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Effects" t="Include">
+            <e p="Fade" t="Include">
+              <e p="FadeDirection.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GameObjectTools" t="Include">
+            <e p="CameraTools.cs" t="Include" />
+            <e p="DontDestroy.cs" t="Include" />
+            <e p="PhysicsObject.cs" t="Include" />
+          </e>
+          <e p="PlayfabCustom" t="Include">
+            <e p="Login" t="Include">
+              <e p="LoginData.cs" t="Include" />
+              <e p="LoginDataEvent.cs" t="Include" />
+              <e p="LoginHelper.cs" t="Include" />
+              <e p="LoginUIController.cs" t="Include" />
+              <e p="RegisterData.cs" t="Include" />
+              <e p="RegisterDataEvent.cs" t="Include" />
+              <e p="RegisterUIController.cs" t="Include" />
+            </e>
+            <e p="PlayfabCodeHandler.cs" t="Include" />
+            <e p="PlayfabErrorEvent.cs" t="Include" />
+          </e>
+          <e p="Tools" t="Include">
+            <e p="ConsoleType.cs" t="Include" />
+            <e p="DataStructure" t="Include">
+              <e p="ArrayTools.cs" t="Include" />
+              <e p="BinarySearch.cs" t="Include" />
+              <e p="CustomList.cs" t="Include" />
+              <e p="MathTools.cs" t="Include" />
+              <e p="MergeSort.cs" t="Include" />
+              <e p="RingArray.cs" t="Include" />
+            </e>
+            <e p="Direction.cs" t="Include" />
+            <e p="Events" t="Include">
+              <e p="IntUnityEvent.cs" t="Include" />
+            </e>
+            <e p="Managers" t="Include">
+              <e p="TimeManager.cs" t="Include" />
+            </e>
+            <e p="PostProcessingController.cs" t="Include" />
+            <e p="Range.cs" t="Include" />
+            <e p="ScreenRange.cs" t="Include" />
+            <e p="Spine" t="Include">
+              <e p="SpineEffects.cs" t="Include" />
+            </e>
+            <e p="TextEffects" t="Include">
+              <e p="TypewritterEffect.cs" t="Include" />
+            </e>
+            <e p="TileTools" t="Include">
+              <e p="TileGenerator2DArea.cs" t="Include" />
+              <e p="TileGenerator2DNoArea.cs" t="Include" />
+              <e p="TileParentController.cs" t="Include" />
+              <e p="Tiles" t="Include">
+                <e p="BaseTileController.cs" t="Include" />
+                <e p="TileData.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Timer.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="EaseInUI.cs" t="Include" />
+              <e p="InputFieldTabController.cs" t="Include" />
+              <e p="UIMonoBehaviour.cs" t="Include" />
+            </e>
+          </e>
+          <e p="V2Tools" t="Include">
+            <e p="CustomGrid.cs" t="Include" />
+            <e p="CustomGridObject.cs" t="Include" />
+            <e p="MeshRendererSortingEditor.cs" t="Include" />
+            <e p="Pathing" t="Include">
+              <e p="AStar" t="Include">
+                <e p="PathFinder.cs" t="Include" />
+                <e p="PathfinderDebugger.cs" t="Include" />
+                <e p="PathNode.cs" t="Include" />
+              </e>
+              <e p="Dijkstra" t="Include">
+                <e p="PathingManager.cs" t="Include" />
+              </e>
+            </e>
+            <e p="VectorUtils.cs" t="Include" />
+            <e p="WorldUtils.cs" t="Include" />
+          </e>
+        </e>
+        <e p="LWRP" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="SimpleCameraController.cs" t="Include" />
+          </e>
+          <e p="TutorialInfo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ReadmeEditor.cs" t="Include" />
+              </e>
+              <e p="Readme.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Sirenix" t="Include">
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                  <e p="SyncListDrawer.cs" t="Include" />
+                  <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                  <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                </e>
+                <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="DemonAdventures.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

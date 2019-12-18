@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Test Soldier
   m_description: A Test Soldier
-  m_prefab: {fileID: 0}
+  m_prefab: {fileID: 3063828093304326364, guid: 5dd7124e040c3b641a265396798775d2,
+    type: 3}
   m_id: 0
   m_stats:
     m_health: 100

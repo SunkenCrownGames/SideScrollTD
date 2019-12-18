@@ -5,34 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15ca5b82-0f84-40b6-ac95-291f87c472c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawners.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/Materials/Physics.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/Materials/Physics/NoFrictionNoBounce.physicsMaterial2D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/Materials/Physics/NoFrictionNoBounce.physicsMaterial2D.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/MeshRendererSortingEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Demon.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Demon.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy/EnemyTest.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy/EnemyTest.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy/GameObject.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Enemy/GameObject.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Soldier.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Soldier/TestSoldier.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Soldier/TestSoldier.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawners/GameObject.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawners/GameObject.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman.atlas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman.atlas.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman_Atlas.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman_Atlas.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman_Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman_Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman_SkeletonData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Spine/Melee/Hitman_SkeletonData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpineController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Soldier/SoldierController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Soldier/SoldierController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonVHeroes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ground Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ground Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ladder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Ladder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/GameSkeleton/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/GameSkeleton/Game.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/Platform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/SpawnerZone0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Level/SpawnerZone0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawners/TestSpawnerSprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawners/TestSpawnerSprite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SoldiersData/TestSoldier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SoldiersData/TestSoldier.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SpawnerData/TestSpawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpawnerData/TestSpawner.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +73,22 @@
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformPath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpineController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Ground.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Ladder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/LevelGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A278EBD4-4AB0-472B-B8E6-38263E06CD61/10/5751410e/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/HitPlatformResultData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/Range.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerIdentifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/GameObjectTools/PhysicsObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LWRP/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Ghost/GhostSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,37 +96,35 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/UI/UIMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Soldier/SoldierController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A278EBD4-4AB0-472B-B8E6-38263E06CD61/10/5751410e/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/SomeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows/Scripts/Editor/OdinMenuEditorWindowExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/Tools/UI/UIMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/MeshRendererSortingEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDebug/GameDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Spine/Runtime/spine-unity/Shaders/Sprite/SpritesUnlit.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/TurretInfoUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/PathFinding/AStar/AStarNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Grid.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/PostProcessingController.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGrid.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathFinder.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/CustomGridNode.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/Tools/ScreenRange.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/VectorUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/PlatformRayData.cs" />
@@ -130,19 +153,29 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/PlayerInfo/PlayerInfoComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerSlot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/GhostSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Data/SpawnerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerIdentifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Ghost/GhostSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
+        <option value="F:/Autorun.inf" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UiManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/UI/SpawnerUiController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/UI/SetUpUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/SortingOrdeChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/MeshEditorSorting.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/MeshRendererSortingEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/LayerOffset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerIdentifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/SpawnerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpineController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Platform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Soldier/SoldierController.cs" />
       </list>
     </option>
   </component>
@@ -231,6 +264,16 @@
       <workItem from="1576099710913" duration="2362000" />
       <workItem from="1576105609636" duration="11848000" />
       <workItem from="1576141720089" duration="277000" />
+      <workItem from="1576220881112" duration="2311000" />
+      <workItem from="1576227014931" duration="5693000" />
+      <workItem from="1576247873100" duration="1012000" />
+      <workItem from="1576276574202" duration="1725000" />
+      <workItem from="1576329453058" duration="4102000" />
+      <workItem from="1576390761181" duration="4898000" />
+      <workItem from="1576440207407" duration="3568000" />
+      <workItem from="1576455816375" duration="628000" />
+      <workItem from="1576531218352" duration="9158000" />
+      <workItem from="1576619372215" duration="8913000" />
     </task>
     <servers />
   </component>
@@ -256,10 +299,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="194" key="RiderGenerateDialog" timestamp="1576141863988">
+    <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576236039621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576141863988" />
+    <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576236039621" />
+    <state x="765" y="194" key="RiderGenerateDialog" timestamp="1576629628025">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576629628025" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576629649785">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576629649785" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

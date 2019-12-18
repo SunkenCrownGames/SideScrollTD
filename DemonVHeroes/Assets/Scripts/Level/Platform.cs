@@ -6,6 +6,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using System;
 using AngieTools.V2Tools.Pathing.Dijkstra;
+using Enemy;
 using Spawners;
 using Spawners.UI;
 using Array = System.Array;
@@ -24,6 +25,7 @@ namespace Level
         [ShowInInspector] [SerializeField] private HitPlatformResult m_bottomLink;
 
         [Title("Data")] 
+        [SerializeField] private List<EnemyController> m_enemiesOnPlatform;
         [SerializeField] private SpriteRenderer m_sr;
         [SerializeField] private int m_linkCount = 0;
 
@@ -31,11 +33,12 @@ namespace Level
 
         
         private static Platform _startPlatform;
+        [SerializeField] private Range m_platformWidth;
 
         // Start is called before the first frame update
         void Start()
         {
-        
+            GetWidth();
         }
 
         // Update is called once per frame
@@ -72,11 +75,17 @@ namespace Level
             }
         }
 
-        private void OnMouseDown()
+        private void GetWidth()
         {
-
+            var box = m_sr.bounds;
+            var position = transform.position;
+            
+            m_platformWidth.StartValue = position.x - box.extents.x;
+            m_platformWidth.EndValue = position.x + box.extents.x;
         }
 
+        #region Links
+        
         private void LinkBottom(RaycastHit2D[] p_hits, Vector3[] p_hitPositions)
         {
             foreach (var position in p_hitPositions)
@@ -142,13 +151,17 @@ namespace Level
             }
         }
 
+        #endregion
         public List<Ladder> Ladders => m_ladders;
 
         public HitPlatformResult TopLink => m_topLink;
 
         public HitPlatformResult BottomLink => m_bottomLink;
 
-        public SpriteRenderer Sr => m_sr;
+        public Range PlatformWidth => m_platformWidth;
+        
+        
+        public SpriteRenderer SpriteRenderer => m_sr;
 
         public void UpdateSpawners()
         {
@@ -161,6 +174,16 @@ namespace Level
             }
         }
 
+        public void AddEnemyToPlatform(EnemyController p_enemyController)
+        {
+            m_enemiesOnPlatform.Add(p_enemyController);
+        }
+
+        public void RemoveEnemyFromPlatform(EnemyController p_enemyController)
+        {
+            m_enemiesOnPlatform.Remove(p_enemyController);
+        }
+        
         public void DisableSpawners()
         {
             // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
@@ -171,7 +194,12 @@ namespace Level
                 spawnerZone.DisableSpawnerVisual();
             }
         }
-        
+
+
+        public List<EnemyController> EnemiesOnPlatform => m_enemiesOnPlatform;
+
         public int LinkCount => m_linkCount;
+        
+        
     }
 }
