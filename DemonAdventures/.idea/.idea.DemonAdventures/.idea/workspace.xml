@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3410d09f-ff29-4eed-8ef1-ac8f6cc85f34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/Materials/Physics.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/Materials/Physics/NoFrictionNoBounce.physicsMaterial2D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/Materials/Physics/NoFrictionNoBounce.physicsMaterial2D.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/V2Tools/MeshRendererSortingEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Demon.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Demon.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/EnemyTest.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/EnemyTest.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/GameObject.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/GameObject.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Soldier.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Soldier/TestSoldier.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Soldier/TestSoldier.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/GameObject.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/GameObject.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.atlas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.atlas.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Atlas.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Atlas.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_SkeletonData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_SkeletonData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Enemy/EnemyController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Enemy/EnemySpineController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Soldier/SoldierController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Soldier/SoldierController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/GameSkeleton/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/GameSkeleton/Game.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/TestSpawnerSprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/TestSpawnerSprite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SoldiersData/TestSoldier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SoldiersData/TestSoldier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SpawnerData/TestSpawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SpawnerData/TestSpawner.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scenes/Scene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Level/Platform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/UI/SetUpUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/UI/SetUpUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Boss\Documents\Gits\SSTD\DemonAdventures\.idea\.idea.DemonAdventures\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V9RRSGa20PREdEa3BTqZUESm6C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3410d09f-ff29-4eed-8ef1-ac8f6cc85f34" name="Default Changelist" comment="" />
+      <created>1576663316791</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576663316791</updated>
+      <workItem from="1576663321604" duration="105000" />
+      <workItem from="1576663439532" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+</project>
