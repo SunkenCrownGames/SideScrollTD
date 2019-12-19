@@ -2,59 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3410d09f-ff29-4eed-8ef1-ac8f6cc85f34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/Materials/Physics.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/Materials/Physics/NoFrictionNoBounce.physicsMaterial2D" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/Materials/Physics/NoFrictionNoBounce.physicsMaterial2D.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/AngieTools/V2Tools/MeshRendererSortingEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Demon.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Demon.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/EnemyTest.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/EnemyTest.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/GameObject.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Enemy/GameObject.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Soldier.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Soldier/TestSoldier.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Soldier/TestSoldier.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/GameObject.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/GameObject.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.atlas.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.atlas.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Atlas.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Atlas.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_SkeletonData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Spine/Melee/Hitman_SkeletonData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Enemy/EnemyController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Enemy/EnemySpineController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Soldier/SoldierController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Soldier/SoldierController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/UiManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/.idea/.idea.DemonVHeroes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/GameSkeleton/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/GameSkeleton/Game.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Level/Platform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/TestSpawnerSprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Prefabs/Spawners/TestSpawnerSprite.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SoldiersData/TestSoldier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SoldiersData/TestSoldier.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SpawnerData/TestSpawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/SpawnerData/TestSpawner.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Resources/Sprites/Enemy/Placeholder/TD_Enemy_Swordsman_01_Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Level/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/UI/SetUpUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Player/UI/SetUpUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/Spawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/Assets/Scripts/Spawners/SpawnerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../DemonVHeroes/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,14 +27,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WeaponPickUpController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugTools/DebugController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlots.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponPickUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/Dijkstra/PathingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/Pathing/AStar/PathfinderDebugger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LookAtMouse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DebugController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Debug/DebugController.cs" />
+        <option value="$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DebugTools/DebugController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/WeaponPickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponPickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/WeaponPickUpController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlots.cs" />
       </list>
     </option>
   </component>
@@ -84,17 +67,22 @@
     </option>
   </component>
   <component name="ProjectId" id="1V9RRSGa20PREdEa3BTqZUESm6C" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -134,6 +122,11 @@
       <updated>1576663316791</updated>
       <workItem from="1576663321604" duration="105000" />
       <workItem from="1576663439532" duration="17000" />
+      <workItem from="1576665091956" duration="4748000" />
+      <workItem from="1576704952964" duration="52000" />
+      <workItem from="1576705018619" duration="655000" />
+      <workItem from="1576706137351" duration="9931000" />
+      <workItem from="1576717348290" duration="213000" />
     </task>
     <servers />
   </component>
@@ -142,4 +135,31 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="194" key="RiderGenerateDialog" timestamp="1576713690041">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576713690041" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1576717508644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576717508644" />
+    <state x="1354" y="335" width="672" height="678" key="search.everywhere.popup" timestamp="1576671568375">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1354" y="335" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576671568375" />
+  </component>
 </project>
