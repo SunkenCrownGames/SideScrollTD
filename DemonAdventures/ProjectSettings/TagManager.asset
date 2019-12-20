@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Weapon
   - WeaponSlots
+  - Bullets
   layers:
   - Default
   - TransparentFX

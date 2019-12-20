@@ -262,6 +262,16 @@
             <e p="LookAtMouse.cs" t="Include" />
           </e>
           <e p="Weapons" t="Include">
+            <e p="BulletDriver.cs" t="Include" />
+            <e p="Modifiers" t="Include">
+              <e p="BounceData.cs" t="Include" />
+              <e p="CastMultiplierData.cs" t="Include" />
+              <e p="ExplosionData.cs" t="Include" />
+              <e p="Modifier.cs" t="Include" />
+              <e p="ModifierStateData.cs" t="Include" />
+              <e p="ModifierStateStatus.cs" t="Include" />
+              <e p="SplitData.cs" t="Include" />
+            </e>
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponData.cs" t="Include" />
             <e p="WeaponPickUp.cs" t="Include" />

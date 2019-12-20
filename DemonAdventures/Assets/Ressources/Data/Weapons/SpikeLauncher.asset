@@ -15,5 +15,17 @@ MonoBehaviour:
   m_iD: 0
   m_name: Spike Pew Pew
   m_description: Throws Pointy Spikes To Kill The Enemy
+  m_splitData:
+    m_splitCount: 2
+    m_angle: 10
+  m_bounceData:
+    m_bounceCount: 0
+  m_explosionData:
+    m_explosionRadius: 0
+    m_explosionStrength: 0
+  m_castMultiplierData:
+    m_castCount: 0
+    m_castDelay: 0
   m_maxBulletCount: 10
-  m_bulletPrefab: {fileID: 0}
+  m_bulletPrefab: {fileID: 4872799565428643595, guid: 5f34931796bff204686c728f3de5d61d,
+    type: 3}

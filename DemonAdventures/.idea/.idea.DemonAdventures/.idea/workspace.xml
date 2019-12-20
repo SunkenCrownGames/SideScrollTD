@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3410d09f-ff29-4eed-8ef1-ac8f6cc85f34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemonAdventures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Data/Weapons/SpikeLauncher.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Data/Weapons/SpikeLauncher.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/CheckerboardMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/CheckerboardMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Materials/Weapons/Weapon5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +35,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WeaponPickUpController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/ModifierStateData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugTools/DebugController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/ExplosionData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlots.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/Modifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/BounceData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/ModifierStateStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AngieTools/V2Tools/WorldUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/BulletDriver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/CastMultiplierData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/SplitData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponPickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,10 +66,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WeaponPickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponPickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WeaponPickUpController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponSlots.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/DoubleCastData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/SpltData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/CastMultiplier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/CastMultiplierData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/ExplosionData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/SplitData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/BounceData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/ModifierStateData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/ModifierStateStatus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Modifiers/Modifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/BulletDriver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Weapon.cs" />
       </list>
     </option>
   </component>
@@ -127,6 +152,7 @@
       <workItem from="1576705018619" duration="655000" />
       <workItem from="1576706137351" duration="9931000" />
       <workItem from="1576717348290" duration="213000" />
+      <workItem from="1576803346172" duration="8423000" />
     </task>
     <servers />
   </component>
@@ -149,10 +175,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="194" key="RiderGenerateDialog" timestamp="1576713690041">
+    <state x="765" y="194" key="RiderGenerateDialog" timestamp="1576831286426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576713690041" />
+    <state x="765" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576831286426" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1576717508644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
